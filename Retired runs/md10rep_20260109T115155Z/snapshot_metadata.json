@@ -1,0 +1,90 @@
+{
+  "cluster_name": "md10rep",
+  "snapshot_id": "6960ebde3e4bf100f34875aa",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6960ebde3e4bf100f34875aa",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION18-mdb10",
+        "snapshot_name": "ORION18-mdb10_6960ebde3e4bf100f34875aa",
+        "response": {
+          "id": "35",
+          "message": "Snapshot, id [35], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo/data",
+        "hidden": false,
+        "hostname": "mdb10",
+        "id": "mdb10:27017",
+        "lastAgentPing": "2026-01-09T11:54:29Z",
+        "memberState": "PRIMARY",
+        "mongodbVersion": "8.0.10",
+        "opTime": "2026-01-09T11:51:54Z",
+        "oplogPath": "/oplog",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 27017,
+        "priority": 1.0,
+        "rsId": "md10rep",
+        "snapshotable": true,
+        "votes": 1
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "694168133e4bf100f33eda80",
+      "clusterName": "md10rep",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1767959541
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-01-09T11:52:53Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1767959541
+          },
+          "member": "REPLICA_SET",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "md10rep",
+          "shardId": null,
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb10.27017.1767959550"
+        }
+      ],
+      "snapshotId": "6960ebde3e4bf100f34875aa",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1767959541
+      }
+    },
+    "state": "FINISHED"
+  },
+  "created_at": "2026-01-09T11:54:34.179027+00:00"
+}

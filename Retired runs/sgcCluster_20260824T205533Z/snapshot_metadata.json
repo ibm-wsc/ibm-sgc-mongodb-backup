@@ -1,0 +1,231 @@
+{
+  "cluster_name": "sgcCluster",
+  "snapshot_id": "6a8cafc53d9e727fec90e022",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6a8cafc53d9e727fec90e022",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb7",
+        "snapshot_name": "ORION16-FiServRep-mdb7_6a8cafc53d9e727fec90e022",
+        "response": {
+          "id": "56",
+          "message": "Snapshot, id [56], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb8",
+        "snapshot_name": "ORION16-FiServRep-mdb8_6a8cafc53d9e727fec90e022",
+        "response": {
+          "id": "57",
+          "message": "Snapshot, id [57], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb9",
+        "snapshot_name": "ORION16-FiServRep-mdb9_6a8cafc53d9e727fec90e022",
+        "response": {
+          "id": "58",
+          "message": "Snapshot, id [58], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb8",
+        "id": "mdb8:37017",
+        "lastAgentPing": "2026-08-24T21:04:14Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-08-24T21:02:07Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "sgcShard_0",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb7",
+        "id": "mdb7:37017",
+        "lastAgentPing": "2026-08-24T21:04:11Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-08-24T21:02:07Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "configRS",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb9",
+        "id": "mdb9:37017",
+        "lastAgentPing": "2026-08-24T21:04:09Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-08-24T21:02:09Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "sgcShard_1",
+        "snapshotable": true,
+        "votes": 1
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 4710,
+        "time": 1787605025
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-08-24T20:58:11Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 3809800192,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 4710,
+            "time": 1787605025
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1787604970"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-08-24T20:58:11Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 121348096,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 4710,
+            "time": 1787605025
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb7.37017.1787605026"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-08-24T21:02:56Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 61636231168,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 4710,
+            "time": 1787605025
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb9.37017.1787605022"
+        }
+      ],
+      "snapshotId": "6a8cafc53d9e727fec90e022",
+      "snapshotTimestamp": {
+        "increment": 4710,
+        "time": 1787605025
+      }
+    },
+    "state": "FINISHED"
+  },
+  "host_metadata": {
+    "sgcShard_0": [
+      {
+        "hostname": "mdb8:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30"
+      }
+    ],
+    "sgcShard_1": [
+      {
+        "hostname": "mdb9:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59"
+      }
+    ],
+    "configRS": [
+      {
+        "hostname": "mdb7:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c"
+      }
+    ]
+  },
+  "created_at": "2026-08-24T21:04:25.090528+00:00"
+}

@@ -1,0 +1,47 @@
+2026-10-01 14:04:34,444 [INFO] Starting Ops Manager restore workflow
+2026-10-01 14:04:34,473 [INFO] Restore point 6aba8d677c5bbb3be03c7d9c taken from cluster 'sgcCluster' at 2026-09-28T16:00:42.575037+00:00
+2026-10-01 14:04:34,474 [INFO] Building infrastructure map for target cluster 'tgtCluster'
+2026-10-01 14:05:28,590 [INFO] Shard mapping supplied by --shardmap:
+2026-10-01 14:05:28,590 [INFO]   configRS -> tgtconfigRS
+2026-10-01 14:05:28,590 [INFO]   sgcShard_0 -> tgtShard_0
+2026-10-01 14:05:28,590 [INFO]   sgcShard_1 -> tgtShard_1
+2026-10-01 14:05:28,590 [INFO] === VALIDATION (no restore will be performed) ===
+2026-10-01 14:05:28,591 [INFO] Checking snapshot availability on the target's storage
+2026-10-01 14:05:28,591 [INFO] Authenticating to FlashSystem fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:29,093 [INFO] configRS -> tgtconfigRS: 'configRS_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION15-mdb7-sgcCluster)
+2026-10-01 14:05:29,093 [INFO] Authenticating to FlashSystem fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:30,018 [INFO] configRS -> tgtconfigRS: 'configRS_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION15-mdb7-sgcCluster-replicated)
+2026-10-01 14:05:30,219 [INFO] sgcShard_0 -> tgtShard_0: 'sgcShard_0_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION16-mdb8-sgcCluster)
+2026-10-01 14:05:30,856 [INFO] sgcShard_0 -> tgtShard_0: 'sgcShard_0_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION16-mdb8-sgcCluster-replicated)
+2026-10-01 14:05:31,067 [INFO] sgcShard_1 -> tgtShard_1: 'sgcShard_1_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION17-mdb9-sgcCluster)
+2026-10-01 14:05:31,447 [INFO] sgcShard_1 -> tgtShard_1: 'sgcShard_1_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION17-mdb9-sgcCluster-replicated)
+2026-10-01 14:05:31,447 [INFO] Checking target host objects and hypervisor domains
+2026-10-01 14:05:31,448 [INFO] Authenticating to FlashSystem fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:31,896 [INFO] tgtconfigRS/rmdb-config1: host object 'SG-FCP-ORION0A-new-mdb-kvm1' present on fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:33,518 [INFO] tgtconfigRS/rmdb-config1: defined on mdb-kvm1 (running)
+2026-10-01 14:05:33,518 [INFO] Authenticating to FlashSystem fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:35,006 [INFO] tgtconfigRS/rmdb-config2: host object 'Orion0B-mdb-kvm2' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:35,896 [INFO] tgtconfigRS/rmdb-config2: defined on mdb-kvm2 (running)
+2026-10-01 14:05:36,605 [INFO] tgtconfigRS/rmdb7: host object 'Orion0C-mdb-kvm3' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:37,621 [INFO] tgtconfigRS/rmdb7: defined on mdb-kvm3 (running)
+2026-10-01 14:05:37,872 [INFO] tgtShard_0/rmdb11: host object 'SG-FCP-ORION0A-new-mdb-kvm1' present on fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:38,808 [INFO] tgtShard_0/rmdb11: defined on mdb-kvm1 (running)
+2026-10-01 14:05:39,086 [INFO] tgtShard_0/rmdb13: host object 'Orion0B-mdb-kvm2' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:40,042 [INFO] tgtShard_0/rmdb13: defined on mdb-kvm2 (running)
+2026-10-01 14:05:40,255 [INFO] tgtShard_0/rmdb1: host object 'SG-FCP-ORION0A-new-mdb-kvm1' present on fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:41,138 [INFO] tgtShard_0/rmdb1: defined on mdb-kvm1 (running)
+2026-10-01 14:05:41,408 [INFO] tgtShard_0/rmdb3: host object 'Orion0B-mdb-kvm2' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:42,306 [INFO] tgtShard_0/rmdb3: defined on mdb-kvm2 (running)
+2026-10-01 14:05:42,620 [INFO] tgtShard_0/rmdb8: host object 'Orion0C-mdb-kvm3' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:43,567 [INFO] tgtShard_0/rmdb8: defined on mdb-kvm3 (running)
+2026-10-01 14:05:43,824 [INFO] tgtShard_1/rmdb12: host object 'SG-FCP-ORION0A-new-mdb-kvm1' present on fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:44,757 [INFO] tgtShard_1/rmdb12: defined on mdb-kvm1 (running)
+2026-10-01 14:05:45,108 [INFO] tgtShard_1/rmdb14: host object 'Orion0C-mdb-kvm3' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:46,091 [INFO] tgtShard_1/rmdb14: defined on mdb-kvm3 (running)
+2026-10-01 14:05:46,303 [INFO] tgtShard_1/rmdb2: host object 'SG-FCP-ORION0A-new-mdb-kvm1' present on fs9500-2.cpolab.ibm.com
+2026-10-01 14:05:47,229 [INFO] tgtShard_1/rmdb2: defined on mdb-kvm1 (running)
+2026-10-01 14:05:47,451 [INFO] tgtShard_1/rmdb4: host object 'Orion0B-mdb-kvm2' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:48,396 [INFO] tgtShard_1/rmdb4: defined on mdb-kvm2 (running)
+2026-10-01 14:05:48,781 [INFO] tgtShard_1/rmdb9: host object 'Orion0C-mdb-kvm3' present on fs9500-3.cpolab.ibm.com
+2026-10-01 14:05:49,754 [INFO] tgtShard_1/rmdb9: defined on mdb-kvm3 (running)
+2026-10-01 14:05:49,754 [INFO] Validation passed: snapshots available, host objects present, hypervisor domains defined

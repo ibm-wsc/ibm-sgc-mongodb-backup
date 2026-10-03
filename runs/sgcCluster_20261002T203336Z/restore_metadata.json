@@ -1,0 +1,1143 @@
+{
+  "snapshot_id": "6ac0155b7c5bbb3be00623a9",
+  "source_cluster": "sgcCluster",
+  "target_cluster": "tgtCluster",
+  "backup_run_dir": "runs\\sgcCluster_20261002T203336Z",
+  "shard_map": {
+    "configRS": "tgtconfigRS",
+    "sgcShard_0": "tgtShard_0",
+    "sgcShard_1": "tgtShard_1"
+  },
+  "restore_id": "6ac017fb457a6b8070196aeb",
+  "status": "completed",
+  "started_at": "2026-10-02T20:45:46.597913+00:00",
+  "completed_at": "2026-10-02T21:01:35.007290+00:00",
+  "opsmanager": [
+    {
+      "step": "find_cluster",
+      "status": "completed",
+      "at": "2026-10-02T20:45:46.721333+00:00",
+      "cluster_id": "6a67ab0a0b3bb92668612c59"
+    },
+    {
+      "step": "validate_cluster_topology",
+      "status": "completed",
+      "at": "2026-10-02T20:45:47.121259+00:00"
+    },
+    {
+      "step": "start_restore",
+      "status": "completed",
+      "at": "2026-10-02T20:45:47.284380+00:00",
+      "restore_id": "6ac017fb457a6b8070196aeb"
+    },
+    {
+      "step": "start_restore_execution",
+      "status": "completed",
+      "at": "2026-10-02T20:45:47.682054+00:00"
+    },
+    {
+      "step": "state_copy_files",
+      "status": "completed",
+      "at": "2026-10-02T20:49:11.042654+00:00"
+    },
+    {
+      "step": "unmount_targets",
+      "status": "completed",
+      "at": "2026-10-02T20:54:17.153662+00:00",
+      "mount_points": [
+        "/fimongo1"
+      ],
+      "hypervisors": [
+        "mdb-kvm1",
+        "mdb-kvm2",
+        "mdb-kvm3"
+      ]
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:54:39.248346+00:00",
+      "node": "rmdb-config1:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:55:08.334655+00:00",
+      "node": "rmdb-config2:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:55:37.093227+00:00",
+      "node": "rmdb7:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:56:01.139284+00:00",
+      "node": "rmdb11:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:56:29.860781+00:00",
+      "node": "rmdb13:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:56:53.681327+00:00",
+      "node": "rmdb1:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:57:21.716193+00:00",
+      "node": "rmdb3:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:57:42.896620+00:00",
+      "node": "rmdb8:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:58:07.085158+00:00",
+      "node": "rmdb12:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:58:35.383286+00:00",
+      "node": "rmdb14:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:59:05.169861+00:00",
+      "node": "rmdb2:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T20:59:33.753576+00:00",
+      "node": "rmdb4:37017"
+    },
+    {
+      "step": "files_copied",
+      "status": "completed",
+      "at": "2026-10-02T21:00:03.533844+00:00",
+      "node": "rmdb9:37017"
+    },
+    {
+      "step": "state_completed",
+      "status": "completed",
+      "at": "2026-10-02T21:01:35.003625+00:00"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rmdb-config1:37017",
+      "target_shard": "tgtconfigRS",
+      "source_shard": "configRS",
+      "snapshot_name": "configRS_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:54:18.122453+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:54:19.259376+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:54:20.051403+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:54:20.622670+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:54:22.803300+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:54:24.686212+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:54:25.555061+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:54:26.445596+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:54:34.546724+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:54:38.916275+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:54:39.247539+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-2.cpolab.ibm.com",
+      "source_volume_group": "ORION15-mdb7-sgcCluster",
+      "volume_group": "rmdb-config1_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb-config1_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138202df88000000000004ab",
+      "host_object": "SG-FCP-ORION0A-new-mdb-kvm1",
+      "hypervisor": "mdb-kvm1",
+      "host_disk": "/dev/mapper/mpathbq",
+      "guest_device": "/dev/vdh",
+      "partition": "/dev/vdh1",
+      "source_filesystem_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c",
+      "new_filesystem_uuid": "da84361c-c48d-4720-9d20-580984e13401",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb-config2:37017",
+      "target_shard": "tgtconfigRS",
+      "source_shard": "configRS",
+      "snapshot_name": "configRS_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:54:40.491155+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:54:42.002748+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:54:42.392846+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:54:43.187200+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:54:52.389114+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:54:54.303811+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:54:55.312970+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:54:56.134736+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:03.771177+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:55:08.056545+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:55:08.333600+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION15-mdb7-sgcCluster-replicated",
+      "volume_group": "rmdb-config2_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb-config2_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab800000000000309",
+      "host_object": "Orion0B-mdb-kvm2",
+      "hypervisor": "mdb-kvm2",
+      "host_disk": "/dev/mapper/mpathbg",
+      "guest_device": "/dev/vdh",
+      "partition": "/dev/vdh1",
+      "source_filesystem_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c",
+      "new_filesystem_uuid": "624ef339-71b1-41b9-94fd-13e8f784e00b",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb7:37017",
+      "target_shard": "tgtconfigRS",
+      "source_shard": "configRS",
+      "snapshot_name": "configRS_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:55:09.331037+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:55:10.492950+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:10.851926+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:55:11.405475+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:55:20.839811+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:55:22.864516+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:55:23.923311+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:24.776378+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:32.487815+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:55:36.805352+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:55:37.092187+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION15-mdb7-sgcCluster-replicated",
+      "volume_group": "rmdb7_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb7_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030a",
+      "host_object": "Orion0C-mdb-kvm3",
+      "hypervisor": "mdb-kvm3",
+      "host_disk": "/dev/mapper/mpathbh",
+      "guest_device": "/dev/vdi",
+      "partition": "/dev/vdi1",
+      "source_filesystem_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c",
+      "new_filesystem_uuid": "dffa9f07-5a4a-40b5-93dd-a0e680be98ea",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb11:37017",
+      "target_shard": "tgtShard_0",
+      "source_shard": "sgcShard_0",
+      "snapshot_name": "sgcShard_0_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:55:38.309389+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:55:40.137620+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:40.593203+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:55:41.168863+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:55:44.217792+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:55:46.299139+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:55:47.424303+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:48.348912+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:55:56.460801+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:56:00.785401+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:56:01.138048+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-2.cpolab.ibm.com",
+      "source_volume_group": "ORION16-mdb8-sgcCluster",
+      "volume_group": "rmdb11_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb11_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138202df88000000000004ac",
+      "host_object": "SG-FCP-ORION0A-new-mdb-kvm1",
+      "hypervisor": "mdb-kvm1",
+      "host_disk": "/dev/mapper/mpathbr",
+      "guest_device": "/dev/vdg",
+      "partition": "/dev/vdg1",
+      "source_filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+      "new_filesystem_uuid": "afbee215-cfd3-4d8c-bd7b-ccb0ae73408b",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb13:37017",
+      "target_shard": "tgtShard_0",
+      "source_shard": "sgcShard_0",
+      "snapshot_name": "sgcShard_0_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:56:01.834438+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:56:03.276719+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:03.589823+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:56:04.114108+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:56:13.426997+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:56:15.475782+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:56:16.557648+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:17.402707+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:25.213224+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:56:29.590563+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:56:29.859059+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION16-mdb8-sgcCluster-replicated",
+      "volume_group": "rmdb13_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb13_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030b",
+      "host_object": "Orion0B-mdb-kvm2",
+      "hypervisor": "mdb-kvm2",
+      "host_disk": "/dev/mapper/mpathbh",
+      "guest_device": "/dev/vdg",
+      "partition": "/dev/vdg1",
+      "source_filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+      "new_filesystem_uuid": "0add9975-08e9-42fa-8050-21c6b6f6c96f",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb1:37017",
+      "target_shard": "tgtShard_0",
+      "source_shard": "sgcShard_0",
+      "snapshot_name": "sgcShard_0_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:56:30.845543+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:56:32.470738+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:32.775108+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:56:33.554788+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:56:36.599484+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:56:38.519074+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:56:39.635712+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:40.527076+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:49.095386+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:56:53.412522+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:56:53.679914+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-2.cpolab.ibm.com",
+      "source_volume_group": "ORION16-mdb8-sgcCluster",
+      "volume_group": "rmdb1_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb1_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138202df88000000000004ad",
+      "host_object": "SG-FCP-ORION0A-new-mdb-kvm1",
+      "hypervisor": "mdb-kvm1",
+      "host_disk": "/dev/mapper/mpathbs",
+      "guest_device": "/dev/vdg",
+      "partition": "/dev/vdg1",
+      "source_filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+      "new_filesystem_uuid": "27c95f80-708f-492f-acb2-fdc1d14a44a9",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb3:37017",
+      "target_shard": "tgtShard_0",
+      "source_shard": "sgcShard_0",
+      "snapshot_name": "sgcShard_0_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:56:54.356082+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:56:55.408707+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:56:55.682230+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:56:56.152847+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:57:05.457162+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:57:07.475659+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:57:08.465258+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:09.283081+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:17.047272+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:57:21.389946+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:57:21.714448+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION16-mdb8-sgcCluster-replicated",
+      "volume_group": "rmdb3_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb3_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030c",
+      "host_object": "Orion0B-mdb-kvm2",
+      "hypervisor": "mdb-kvm2",
+      "host_disk": "/dev/mapper/mpathbi",
+      "guest_device": "/dev/vdh",
+      "partition": "/dev/vdh1",
+      "source_filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+      "new_filesystem_uuid": "7cc14231-9190-4cd4-9e16-79589ffbf4ae",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb8:37017",
+      "target_shard": "tgtShard_0",
+      "source_shard": "sgcShard_0",
+      "snapshot_name": "sgcShard_0_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:57:22.368947+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:57:23.495147+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:23.743258+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:57:24.207734+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:57:26.369864+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:57:28.413619+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:57:29.443320+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:30.324008+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:38.304953+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:57:42.597269+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:57:42.894952+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION16-mdb8-sgcCluster-replicated",
+      "volume_group": "rmdb8_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb8_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030d",
+      "host_object": "Orion0C-mdb-kvm3",
+      "hypervisor": "mdb-kvm3",
+      "host_disk": "/dev/mapper/mpathbi",
+      "guest_device": "/dev/vdi",
+      "partition": "/dev/vdi1",
+      "source_filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+      "new_filesystem_uuid": "a403018d-d885-4a01-8fde-3c2ca278cfd0",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb12:37017",
+      "target_shard": "tgtShard_1",
+      "source_shard": "sgcShard_1",
+      "snapshot_name": "sgcShard_1_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:57:43.774152+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:57:45.890450+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:46.755686+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:57:47.495513+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:57:50.561940+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:57:52.510167+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:57:53.519434+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:57:54.347968+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:02.463612+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:58:06.810166+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:58:07.083131+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-2.cpolab.ibm.com",
+      "source_volume_group": "ORION17-mdb9-sgcCluster",
+      "volume_group": "rmdb12_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb12_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138202df88000000000004ae",
+      "host_object": "SG-FCP-ORION0A-new-mdb-kvm1",
+      "hypervisor": "mdb-kvm1",
+      "host_disk": "/dev/mapper/mpathbt",
+      "guest_device": "/dev/vdg",
+      "partition": "/dev/vdg1",
+      "source_filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+      "new_filesystem_uuid": "1c6f05a6-b031-4c74-aed5-09b8dbab05ab",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb14:37017",
+      "target_shard": "tgtShard_1",
+      "source_shard": "sgcShard_1",
+      "snapshot_name": "sgcShard_1_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:58:07.785139+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:58:08.668949+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:08.998460+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:58:09.596545+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:58:18.887168+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:58:20.782002+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:58:21.838033+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:22.683434+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:30.615504+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:58:35.028125+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:58:35.381194+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION17-mdb9-sgcCluster-replicated",
+      "volume_group": "rmdb14_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb14_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030e",
+      "host_object": "Orion0C-mdb-kvm3",
+      "hypervisor": "mdb-kvm3",
+      "host_disk": "/dev/mapper/mpathbj",
+      "guest_device": "/dev/vdg",
+      "partition": "/dev/vdg1",
+      "source_filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+      "new_filesystem_uuid": "e5e37c04-d3b8-4ad6-81de-88038d45376c",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb2:37017",
+      "target_shard": "tgtShard_1",
+      "source_shard": "sgcShard_1",
+      "snapshot_name": "sgcShard_1_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:58:36.569128+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:58:37.378882+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:37.643534+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:58:38.550002+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:58:48.663032+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:58:50.558203+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:58:51.586200+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:58:52.481886+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:00.531770+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:59:04.898883+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:59:05.167410+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-2.cpolab.ibm.com",
+      "source_volume_group": "ORION17-mdb9-sgcCluster",
+      "volume_group": "rmdb2_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb2_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138202df88000000000004af",
+      "host_object": "SG-FCP-ORION0A-new-mdb-kvm1",
+      "hypervisor": "mdb-kvm1",
+      "host_disk": "/dev/mapper/mpathbu",
+      "guest_device": "/dev/vdh",
+      "partition": "/dev/vdh1",
+      "source_filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+      "new_filesystem_uuid": "90964a2b-027d-4f70-b287-dc39171ff4f1",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb4:37017",
+      "target_shard": "tgtShard_1",
+      "source_shard": "sgcShard_1",
+      "snapshot_name": "sgcShard_1_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:59:06.204892+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:59:07.124510+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:07.383178+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:59:07.879513+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:59:17.132299+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:59:19.134616+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:59:20.230210+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:21.077474+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:29.050094+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T20:59:33.445806+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T20:59:33.751289+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION17-mdb9-sgcCluster-replicated",
+      "volume_group": "rmdb4_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb4_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab80000000000030f",
+      "host_object": "Orion0B-mdb-kvm2",
+      "hypervisor": "mdb-kvm2",
+      "host_disk": "/dev/mapper/mpathbj",
+      "guest_device": "/dev/vdh",
+      "partition": "/dev/vdh1",
+      "source_filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+      "new_filesystem_uuid": "95dbcd99-e8ca-40ea-ac68-0e506e80bf88",
+      "mount_point": "/fimongo1"
+    },
+    {
+      "id": "rmdb9:37017",
+      "target_shard": "tgtShard_1",
+      "source_shard": "sgcShard_1",
+      "snapshot_name": "sgcShard_1_6ac0155b7c5bbb3be00623a9",
+      "status": "completed",
+      "steps": [
+        {
+          "step": "create_thinclone_volume_group",
+          "status": "completed",
+          "at": "2026-10-02T20:59:34.616569+00:00"
+        },
+        {
+          "step": "rename_volumes",
+          "status": "completed",
+          "at": "2026-10-02T20:59:35.929345+00:00"
+        },
+        {
+          "step": "read_volume_uid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:36.333409+00:00"
+        },
+        {
+          "step": "map_volume_to_host",
+          "status": "completed",
+          "at": "2026-10-02T20:59:36.915641+00:00"
+        },
+        {
+          "step": "rescan_and_find_disk",
+          "status": "completed",
+          "at": "2026-10-02T20:59:46.221699+00:00"
+        },
+        {
+          "step": "attach_disk_to_domain",
+          "status": "completed",
+          "at": "2026-10-02T20:59:48.304165+00:00"
+        },
+        {
+          "step": "resolve_partition",
+          "status": "completed",
+          "at": "2026-10-02T20:59:49.341150+00:00"
+        },
+        {
+          "step": "verify_snapshot_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:50.241883+00:00"
+        },
+        {
+          "step": "change_filesystem_uuid",
+          "status": "completed",
+          "at": "2026-10-02T20:59:58.663467+00:00"
+        },
+        {
+          "step": "mount_and_verify",
+          "status": "completed",
+          "at": "2026-10-02T21:00:03.197218+00:00"
+        },
+        {
+          "step": "files_copied",
+          "status": "completed",
+          "at": "2026-10-02T21:00:03.530223+00:00"
+        }
+      ],
+      "flashsystem": "fs9500-3.cpolab.ibm.com",
+      "source_volume_group": "ORION17-mdb9-sgcCluster-replicated",
+      "volume_group": "rmdb9_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_name": "restore_rmdb9_tgtCluster_6ac0155b7c5bbb3be00623a9",
+      "volume_uid": "60050768138302dab800000000000310",
+      "host_object": "Orion0C-mdb-kvm3",
+      "hypervisor": "mdb-kvm3",
+      "host_disk": "/dev/mapper/mpathbk",
+      "guest_device": "/dev/vdi",
+      "partition": "/dev/vdi1",
+      "source_filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+      "new_filesystem_uuid": "c97e864b-1995-4151-bbe9-8a9d96d789e4",
+      "mount_point": "/fimongo1"
+    }
+  ]
+}

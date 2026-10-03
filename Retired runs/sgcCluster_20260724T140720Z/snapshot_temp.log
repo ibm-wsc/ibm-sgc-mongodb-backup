@@ -1,0 +1,53 @@
+2026-07-24 09:07:20,657 [INFO] Starting Ops Manager snapshot workflow
+2026-07-24 09:07:20,658 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-07-24 09:07:20,848 [DEBUG] STATUS 200
+2026-07-24 09:07:20,848 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39582af9f8584e226c2953",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39582af9f8584e226c2953",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-07-24 09:07:20,848 [INFO] Cluster resolved: sgcCluster
+2026-07-24 09:07:20,854 [INFO] Using explicitly provided snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-07-24 09:07:20,857 [INFO] Snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-07-24 09:07:20,859 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a39559ff9f8584e226bec72/snapshot
+2026-07-24 09:07:20,859 [DEBUG] {
+  "nodeIds": [
+    "mdb7:37017",
+    "mdb8:37017",
+    "mdb9:37017"
+  ]
+}
+2026-07-24 09:07:20,981 [DEBUG] STATUS 400
+2026-07-24 09:07:20,981 [DEBUG] {
+  "errorCode": "THIRD_PARTY_SNAPSHOT_IN_PROGRESS",
+  "message": "Operation is not allowed when there is a snapshot in progress.",
+  "version": "1",
+  "status": "ERROR"
+}

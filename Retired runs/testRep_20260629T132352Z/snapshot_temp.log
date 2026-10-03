@@ -1,0 +1,8 @@
+2026-06-29 08:23:52,685 [INFO] Starting Ops Manager snapshot workflow
+2026-06-29 08:23:52,685 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-06-29 08:23:52,847 [DEBUG] STATUS 401
+2026-06-29 08:23:52,848 [DEBUG] {
+  "error": 401,
+  "reason": "Unauthorized",
+  "detail": "You are not authorized for this resource."
+}

@@ -1,0 +1,937 @@
+2026-07-16 09:28:01,357 [INFO] Starting Ops Manager restore workflow
+2026-07-16 09:28:02,616 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a57845c84006855ce70784a
+2026-07-16 09:28:03,243 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a57845c84006855ce70784a (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:03,245 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a57845c84006855ce70784a
+2026-07-16 09:28:03,785 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a57845c84006855ce70784a (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:03,788 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a57845c84006855ce70784a
+2026-07-16 09:28:04,371 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a57845c84006855ce70784a (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:04,374 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a563ed484006855ce536b50
+2026-07-16 09:28:04,930 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a563ed484006855ce536b50 (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:04,931 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a563ed484006855ce536b50
+2026-07-16 09:28:05,508 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a563ed484006855ce536b50 (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:05,510 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a563ed484006855ce536b50
+2026-07-16 09:28:06,088 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a563ed484006855ce536b50 (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:06,090 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a56352484006855ce52776a
+2026-07-16 09:28:06,657 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a56352484006855ce52776a (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:06,659 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a56352484006855ce52776a
+2026-07-16 09:28:07,222 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a56352484006855ce52776a (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:07,224 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a56352484006855ce52776a
+2026-07-16 09:28:07,787 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a56352484006855ce52776a (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:07,788 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a56339184006855ce5254ea
+2026-07-16 09:28:08,344 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a56339184006855ce5254ea (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:08,347 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a56339184006855ce5254ea
+2026-07-16 09:28:08,906 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a56339184006855ce5254ea (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:08,909 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a56339184006855ce5254ea
+2026-07-16 09:28:09,462 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a56339184006855ce5254ea (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:09,469 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a4e5a6f84006855cea7de7d
+2026-07-16 09:28:10,056 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a4e5a6f84006855cea7de7d (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:10,058 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a4e5a6f84006855cea7de7d
+2026-07-16 09:28:10,682 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a4e5a6f84006855cea7de7d (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:10,683 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a4e5a6f84006855cea7de7d
+2026-07-16 09:28:11,271 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a4e5a6f84006855cea7de7d (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:11,273 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a4e4dca84006855cea6a399
+2026-07-16 09:28:11,839 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb7_6a4e4dca84006855cea6a399 (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:11,840 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a4e4dca84006855cea6a399
+2026-07-16 09:28:12,354 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb8_6a4e4dca84006855cea6a399 (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:12,356 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a4e4dca84006855cea6a399
+2026-07-16 09:28:12,938 [INFO] Valid FlashSystem snapshot found: ORION16-FiServRep-mdb9_6a4e4dca84006855cea6a399 (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:12,941 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a4280b4f9f8584e2237151c
+2026-07-16 09:28:13,518 [INFO] Expired snapshot: ORION16-FiServRep-mdb7_6a4280b4f9f8584e2237151c (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:13,520 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a4280b4f9f8584e2237151c
+2026-07-16 09:28:14,045 [INFO] Expired snapshot: ORION16-FiServRep-mdb8_6a4280b4f9f8584e2237151c (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:14,047 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a4280b4f9f8584e2237151c
+2026-07-16 09:28:14,694 [INFO] Expired snapshot: ORION16-FiServRep-mdb9_6a4280b4f9f8584e2237151c (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:14,696 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a427f1ef9f8584e2236f01b
+2026-07-16 09:28:15,243 [INFO] Expired snapshot: ORION16-FiServRep-mdb7_6a427f1ef9f8584e2236f01b (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:15,245 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a427f1ef9f8584e2236f01b
+2026-07-16 09:28:15,773 [INFO] Expired snapshot: ORION16-FiServRep-mdb8_6a427f1ef9f8584e2236f01b (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:15,775 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a427f1ef9f8584e2236f01b
+2026-07-16 09:28:16,348 [INFO] Expired snapshot: ORION16-FiServRep-mdb9_6a427f1ef9f8584e2236f01b (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:16,350 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a42777bf9f8584e223647b0
+2026-07-16 09:28:17,158 [INFO] Expired snapshot: ORION16-FiServRep-mdb7_6a42777bf9f8584e223647b0 (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:17,160 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a42777bf9f8584e223647b0
+2026-07-16 09:28:17,651 [INFO] Expired snapshot: ORION16-FiServRep-mdb8_6a42777bf9f8584e223647b0 (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:17,671 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a42777bf9f8584e223647b0
+2026-07-16 09:28:18,219 [INFO] Expired snapshot: ORION16-FiServRep-mdb9_6a42777bf9f8584e223647b0 (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:18,221 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a4275cff9f8584e2236226f
+2026-07-16 09:28:18,687 [INFO] Expired snapshot: ORION16-FiServRep-mdb7_6a4275cff9f8584e2236226f (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:18,688 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a4275cff9f8584e2236226f
+2026-07-16 09:28:19,144 [INFO] Expired snapshot: ORION16-FiServRep-mdb8_6a4275cff9f8584e2236226f (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:19,146 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a4275cff9f8584e2236226f
+2026-07-16 09:28:19,621 [INFO] Expired snapshot: ORION16-FiServRep-mdb9_6a4275cff9f8584e2236226f (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:19,622 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb7 | ORION16-FiServRep-mdb7_6a42727bf9f8584e2235d88a
+2026-07-16 09:28:20,078 [INFO] Expired snapshot: ORION16-FiServRep-mdb7_6a42727bf9f8584e2235d88a (VG=ORION16-FiServRep-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:20,080 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb8 | ORION16-FiServRep-mdb8_6a42727bf9f8584e2235d88a
+2026-07-16 09:28:20,550 [INFO] Expired snapshot: ORION16-FiServRep-mdb8_6a42727bf9f8584e2235d88a (VG=ORION16-FiServRep-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:20,551 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-FiServRep-mdb9 | ORION16-FiServRep-mdb9_6a42727bf9f8584e2235d88a
+2026-07-16 09:28:20,997 [INFO] Expired snapshot: ORION16-FiServRep-mdb9_6a42727bf9f8584e2235d88a (VG=ORION16-FiServRep-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-16 09:28:20,998 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-07-16 09:28:21,166 [DEBUG] STATUS 200
+2026-07-16 09:28:21,166 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39582af9f8584e226c2953",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39582af9f8584e226c2953",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-07-16 09:28:21,166 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a3939acf9f8584e226a56e4
+2026-07-16 09:28:21,289 [DEBUG] STATUS 200
+2026-07-16 09:28:21,290 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tsetrepRestore",
+      "nodes": [
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:27017",
+          "lastAgentPing": "2026-07-16T14:28:10Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:27017",
+          "lastAgentPing": "2026-07-16T14:27:55Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:27017",
+          "lastAgentPing": "2026-07-16T14:28:07Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "6a57a08b8a91cdade89f165b"
+}
+2026-07-16 09:28:21,291 [INFO] Source replica sets : 1
+2026-07-16 09:28:21,292 [INFO] Destination replica sets : 1
+2026-07-16 09:28:21,292 [INFO] Cluster topology validation passed
+2026-07-16 09:28:21,292 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a3939acf9f8584e226a56e4
+2026-07-16 09:28:21,418 [DEBUG] STATUS 200
+2026-07-16 09:28:21,419 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tsetrepRestore",
+      "nodes": [
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:27017",
+          "lastAgentPing": "2026-07-16T14:28:10Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:27017",
+          "lastAgentPing": "2026-07-16T14:27:55Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:27017",
+          "lastAgentPing": "2026-07-16T14:28:07Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-16T14:27:21Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "tsetrepRestore",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "6a57a08b8a91cdade89f165b"
+}
+2026-07-16 09:28:21,419 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a3939acf9f8584e226a56e4/restore
+2026-07-16 09:28:21,419 [DEBUG] {
+  "snapshotsMetadata": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1784037119
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-07-14T13:52:30Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 9846784,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1784037119
+          },
+          "member": "REPLICA_SET",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "testRep",
+          "shardId": null,
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.27017.1784037120"
+        }
+      ],
+      "snapshotId": "6a563ed484006855ce536b50",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1784037119
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rmdb9:27017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb7:27017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb8:27017",
+      "restoreRole": "RESTORE"
+    }
+  ]
+}
+2026-07-16 09:28:21,541 [DEBUG] STATUS 200
+2026-07-16 09:28:21,541 [DEBUG] {
+  "clusterMapping": [
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb9",
+          "id": "rmdb9:27017",
+          "port": 27017,
+          "rsId": "tsetrepRestore",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb7",
+          "id": "rmdb7:27017",
+          "port": 27017,
+          "rsId": "tsetrepRestore",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb8",
+          "id": "rmdb8:27017",
+          "port": 27017,
+          "rsId": "tsetrepRestore",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "restoreId": "6a58ea858a91cdade89fe039"
+}
+2026-07-16 09:28:21,542 [INFO] Restore ID: 6a58ea858a91cdade89fe039
+2026-07-16 09:28:21,543 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039/start
+2026-07-16 09:28:21,832 [DEBUG] STATUS 200
+2026-07-16 09:28:21,832 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-16 09:28:21,833 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:28:21,965 [DEBUG] STATUS 200
+2026-07-16 09:28:21,965 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-16 09:28:21,965 [INFO] Restore state: PENDING
+2026-07-16 09:28:31,966 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:28:32,100 [DEBUG] STATUS 200
+2026-07-16 09:28:32,101 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-16 09:28:32,101 [INFO] Restore state: PENDING
+2026-07-16 09:28:42,102 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:28:42,259 [DEBUG] STATUS 200
+2026-07-16 09:28:42,260 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-16 09:28:42,260 [INFO] Restore state: PENDING
+2026-07-16 09:28:52,261 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:28:52,398 [DEBUG] STATUS 200
+2026-07-16 09:28:52,399 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "PENDING",
+      "stateUpdateTime": 1784212101
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-16 09:28:52,400 [INFO] Restore state: PENDING
+2026-07-16 09:29:02,401 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:02,534 [DEBUG] STATUS 200
+2026-07-16 09:29:02,534 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:02,534 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:29:12,535 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:12,671 [DEBUG] STATUS 200
+2026-07-16 09:29:12,671 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:12,672 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:29:22,672 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:22,863 [DEBUG] STATUS 200
+2026-07-16 09:29:22,863 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:22,863 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:29:32,864 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:33,000 [DEBUG] STATUS 200
+2026-07-16 09:29:33,000 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:33,000 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:29:43,001 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:43,158 [DEBUG] STATUS 200
+2026-07-16 09:29:43,159 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:43,159 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:29:53,159 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:29:53,295 [DEBUG] STATUS 200
+2026-07-16 09:29:53,296 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:29:53,296 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:30:03,296 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:30:03,431 [DEBUG] STATUS 200
+2026-07-16 09:30:03,431 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1784212197
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1784212140
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-16 09:30:03,432 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-16 09:30:13,433 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a58ea858a91cdade89fe039
+2026-07-16 09:30:13,592 [DEBUG] STATUS 200
+2026-07-16 09:30:13,592 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "testRep",
+      "targetRsId": "tsetrepRestore"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1784212197
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1784212208
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:27017",
+      "port": 27017,
+      "rsId": "tsetrepRestore",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1784212207
+    }
+  ],
+  "state": "COPY_FILES"
+}
+2026-07-16 09:30:13,593 [INFO] Restore state: COPY_FILES
+2026-07-16 09:30:23,593 [INFO] Unmounting MongoDB data volumes on all hosts
+2026-07-16 09:30:24,392 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:30:25,221 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:30:25,987 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:30:25,987 [INFO] Busy hosts: 3
+2026-07-16 09:30:36,757 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:30:37,596 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:30:38,413 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:30:38,414 [INFO] Busy hosts: 3
+2026-07-16 09:30:49,238 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:30:50,055 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:30:50,884 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:30:50,884 [INFO] Busy hosts: 3
+2026-07-16 09:31:01,687 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:31:02,456 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:31:03,222 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:31:03,223 [INFO] Busy hosts: 3
+2026-07-16 09:31:14,037 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:31:14,853 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:31:15,651 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:31:15,651 [INFO] Busy hosts: 3
+2026-07-16 09:31:26,498 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:31:27,317 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:31:28,096 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:31:28,097 [INFO] Busy hosts: 3
+2026-07-16 09:31:38,871 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:31:39,686 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:31:40,451 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:31:40,452 [INFO] Busy hosts: 3
+2026-07-16 09:31:51,220 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:31:52,029 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:31:52,797 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:31:52,797 [INFO] Busy hosts: 3
+2026-07-16 09:32:03,557 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:32:04,342 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:32:05,126 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:32:05,127 [INFO] Busy hosts: 3
+2026-07-16 09:32:15,911 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:32:16,731 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:32:17,495 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:32:17,495 [INFO] Busy hosts: 3
+2026-07-16 09:32:28,260 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:32:29,114 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:32:29,878 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:32:29,878 [INFO] Busy hosts: 3
+2026-07-16 09:32:40,641 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:32:41,410 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:32:42,238 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:32:42,238 [INFO] Busy hosts: 3
+2026-07-16 09:32:53,012 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:32:53,790 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:32:54,556 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:32:54,556 [INFO] Busy hosts: 3
+2026-07-16 09:33:05,365 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:33:06,156 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:33:06,983 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:33:06,983 [INFO] Busy hosts: 3
+2026-07-16 09:33:17,761 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:33:18,537 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:33:19,302 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:33:19,302 [INFO] Busy hosts: 3
+2026-07-16 09:33:30,075 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:33:30,838 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:33:31,619 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:33:31,619 [INFO] Busy hosts: 3
+2026-07-16 09:33:42,422 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:33:43,229 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:33:43,981 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:33:43,982 [INFO] Busy hosts: 3
+2026-07-16 09:33:54,742 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:33:55,506 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:33:56,268 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:33:56,268 [INFO] Busy hosts: 3
+2026-07-16 09:34:07,097 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:34:07,908 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:34:08,687 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:34:08,688 [INFO] Busy hosts: 3
+2026-07-16 09:34:19,461 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:34:20,225 [INFO] Host rmdb7 is currently busy
+2026-07-16 09:34:21,018 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:34:21,018 [INFO] Busy hosts: 3
+2026-07-16 09:34:31,832 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:34:33,429 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:34:33,429 [INFO] Busy hosts: 2
+2026-07-16 09:34:44,231 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:34:45,802 [INFO] Host rmdb8 is currently busy
+2026-07-16 09:34:45,802 [INFO] Busy hosts: 2
+2026-07-16 09:34:56,574 [INFO] Host rmdb9 is currently busy
+2026-07-16 09:34:58,246 [INFO] Busy hosts: 1
+2026-07-16 09:35:10,649 [INFO] Busy hosts: 0
+2026-07-16 09:35:10,650 [INFO] Flushing cache after umount on rmdb9
+2026-07-16 09:35:11,513 [INFO] Flushing cache after umount on rmdb7
+2026-07-16 09:35:12,341 [INFO] Flushing cache after umount on rmdb8
+2026-07-16 09:35:13,210 [INFO] Resolving KVM cache on host: mdb-kvm1
+2026-07-16 09:35:18,236 [INFO] Resolving KVM cache on host: mdb-kvm2
+2026-07-16 09:35:23,264 [INFO] Resolving KVM cache on host: mdb-kvm3
+2026-07-16 09:35:28,287 [INFO] Target nodes unmounted
+2026-07-16 09:35:28,287 [INFO] Refreshing target volumes from snapshots
+2026-07-16 09:36:12,852 [INFO] Mounting, verifying, and marking nodes as filesCopied
+2026-07-16 09:36:12,853 [INFO] Mounting filesystem on target host rmdb9:27017
+2026-07-16 09:36:12,853 [INFO] Mounting UUID=74e80e43-bc28-47e8-93f7-7aa89f7364dc on rmdb9 at /fimongo
+2026-07-16 09:36:13,703 [WARNING] Mount failed on rmdb9: mount: /fimongo: wrong fs type, bad option, bad superblock on /dev/vdg1, missing codepage or helper program, or other error.
+2026-07-16 09:36:13,703 [INFO] Verifying mount on target host rmdb9:27017

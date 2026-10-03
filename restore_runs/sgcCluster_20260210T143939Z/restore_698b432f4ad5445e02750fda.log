@@ -1,0 +1,3380 @@
+2026-02-10 08:39:39,348 [INFO] Starting Ops Manager restore workflow
+2026-02-10 08:39:39,905 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_6984ff8b3e4bf100f368ac18
+2026-02-10 08:39:40,087 [INFO] Valid FlashSystem snapshot found: ORION15-mdb7_6984ff8b3e4bf100f368ac18 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:40,088 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_6984ff8b3e4bf100f368ac18
+2026-02-10 08:39:40,286 [INFO] Valid FlashSystem snapshot found: ORION17-mdb9_6984ff8b3e4bf100f368ac18 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:40,287 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_6984ff8b3e4bf100f368ac18
+2026-02-10 08:39:40,466 [INFO] Valid FlashSystem snapshot found: ORION16-mdb8_6984ff8b3e4bf100f368ac18 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:40,467 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | RecoveryShards | RecoveryShards_6984ff8b3e4bf100f368ac18
+2026-02-10 08:39:40,647 [INFO] Valid FlashSystem snapshot found: RecoveryShards_6984ff8b3e4bf100f368ac18 (VG=RecoveryShards, system=fs9500-3.cpolab.ibm.com)
+2026-02-10 08:39:40,647 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_69824f2f3e4bf100f3076d81
+2026-02-10 08:39:40,854 [INFO] Valid FlashSystem snapshot found: ORION15-mdb7_69824f2f3e4bf100f3076d81 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:40,855 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_69824f2f3e4bf100f3076d81
+2026-02-10 08:39:41,038 [INFO] Valid FlashSystem snapshot found: ORION17-mdb9_69824f2f3e4bf100f3076d81 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:41,038 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_69824f2f3e4bf100f3076d81
+2026-02-10 08:39:41,241 [INFO] Valid FlashSystem snapshot found: ORION16-mdb8_69824f2f3e4bf100f3076d81 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:41,241 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | RecoveryShards | RecoveryShards_69824f2f3e4bf100f3076d81
+2026-02-10 08:39:41,443 [INFO] Valid FlashSystem snapshot found: RecoveryShards_69824f2f3e4bf100f3076d81 (VG=RecoveryShards, system=fs9500-3.cpolab.ibm.com)
+2026-02-10 08:39:41,443 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_6980f36e3e4bf100f3d674e5
+2026-02-10 08:39:41,623 [INFO] Expired snapshot: ORION15-mdb7_6980f36e3e4bf100f3d674e5 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:41,623 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_6980f36e3e4bf100f3d674e5
+2026-02-10 08:39:41,815 [INFO] Expired snapshot: ORION17-mdb9_6980f36e3e4bf100f3d674e5 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:41,815 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_6980f36e3e4bf100f3d674e5
+2026-02-10 08:39:42,016 [INFO] Expired snapshot: ORION16-mdb8_6980f36e3e4bf100f3d674e5 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:42,017 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | RecoveryShards | RecoveryShards_6980f36e3e4bf100f3d674e5
+2026-02-10 08:39:42,203 [INFO] Expired snapshot: RecoveryShards_6980f36e3e4bf100f3d674e5 (VG=RecoveryShards, system=fs9500-3.cpolab.ibm.com)
+2026-02-10 08:39:42,204 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_697a535e3e4bf100f3e7bec5
+2026-02-10 08:39:42,404 [INFO] Expired snapshot: ORION15-mdb7_697a535e3e4bf100f3e7bec5 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:42,404 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_697a535e3e4bf100f3e7bec5
+2026-02-10 08:39:42,580 [INFO] Expired snapshot: ORION17-mdb9_697a535e3e4bf100f3e7bec5 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:42,581 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_697a535e3e4bf100f3e7bec5
+2026-02-10 08:39:42,756 [INFO] Expired snapshot: ORION16-mdb8_697a535e3e4bf100f3e7bec5 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:42,757 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_697902f73e4bf100f3b7b9b7
+2026-02-10 08:39:42,949 [INFO] Expired snapshot: ORION15-mdb7_697902f73e4bf100f3b7b9b7 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:42,949 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_697902f73e4bf100f3b7b9b7
+2026-02-10 08:39:43,140 [INFO] Expired snapshot: ORION17-mdb9_697902f73e4bf100f3b7b9b7 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:43,141 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_697902f73e4bf100f3b7b9b7
+2026-02-10 08:39:43,347 [INFO] Expired snapshot: ORION16-mdb8_697902f73e4bf100f3b7b9b7 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-02-10 08:39:43,347 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/clusters
+2026-02-10 08:39:43,549 [DEBUG] STATUS 200
+2026-02-10 08:39:43,549 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "693ed1793e4bf100f3a694cf",
+      "clusterName": "FiServRep",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "jobId": "693ed1793e4bf100f3a694cf",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "694168133e4bf100f33eda80",
+      "clusterName": "md10rep",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "jobId": "694168133e4bf100f33eda80",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "69812cbd3e4bf100f3deacb7",
+      "clusterName": "sgcCluster",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "jobId": "69812cbd3e4bf100f3deacb7",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-02-10 08:39:43,549 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/clusters/69812cbd3e4bf100f3deacb7
+2026-02-10 08:39:43,691 [DEBUG] STATUS 200
+2026-02-10 08:39:43,691 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "sgcShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb1",
+          "id": "mdb1:37017",
+          "lastAgentPing": "2026-02-10T14:39:08Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb8",
+          "id": "mdb8:37017",
+          "lastAgentPing": "2026-02-10T14:39:12Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb3",
+          "id": "mdb3:37017",
+          "lastAgentPing": "2026-02-10T14:38:42Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "sgcShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb9",
+          "id": "mdb9:37017",
+          "lastAgentPing": "2026-02-10T14:38:46Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb2",
+          "id": "mdb2:37017",
+          "lastAgentPing": "2026-02-10T14:39:17Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb4",
+          "id": "mdb4:37017",
+          "lastAgentPing": "2026-02-10T14:39:00Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "configRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config2",
+          "id": "mdb-config2:37017",
+          "lastAgentPing": "2026-02-10T14:39:23Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:23Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config1",
+          "id": "mdb-config1:37017",
+          "lastAgentPing": "2026-02-10T14:38:46Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:24Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb7",
+          "id": "mdb7:37017",
+          "lastAgentPing": "2026-02-10T14:39:28Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:23Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "698634b44ad5445e0272882c",
+  "snapshotId": "6984ff8b3e4bf100f368ac18"
+}
+2026-02-10 08:39:43,691 [INFO] Source replica sets : 3
+2026-02-10 08:39:43,691 [INFO] Destination replica sets : 3
+2026-02-10 08:39:43,692 [INFO] Cluster topology validation passed
+2026-02-10 08:39:43,692 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/clusters/69812cbd3e4bf100f3deacb7
+2026-02-10 08:39:43,834 [DEBUG] STATUS 200
+2026-02-10 08:39:43,834 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "sgcShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb1",
+          "id": "mdb1:37017",
+          "lastAgentPing": "2026-02-10T14:39:08Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb8",
+          "id": "mdb8:37017",
+          "lastAgentPing": "2026-02-10T14:39:12Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb3",
+          "id": "mdb3:37017",
+          "lastAgentPing": "2026-02-10T14:38:42Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "sgcShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb9",
+          "id": "mdb9:37017",
+          "lastAgentPing": "2026-02-10T14:38:46Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb2",
+          "id": "mdb2:37017",
+          "lastAgentPing": "2026-02-10T14:39:17Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb4",
+          "id": "mdb4:37017",
+          "lastAgentPing": "2026-02-10T14:39:00Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:20Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "configRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config2",
+          "id": "mdb-config2:37017",
+          "lastAgentPing": "2026-02-10T14:39:23Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:23Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config1",
+          "id": "mdb-config1:37017",
+          "lastAgentPing": "2026-02-10T14:38:46Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:24Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb7",
+          "id": "mdb7:37017",
+          "lastAgentPing": "2026-02-10T14:39:28Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.10",
+          "opTime": "2026-02-10T14:39:23Z",
+          "oplogPath": "/oplog",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "698634b44ad5445e0272882c",
+  "snapshotId": "6984ff8b3e4bf100f368ac18"
+}
+2026-02-10 08:39:43,834 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/clusters/69812cbd3e4bf100f3deacb7/restore
+2026-02-10 08:39:43,834 [DEBUG] {
+  "snapshotsMetadata": [
+    {
+      "clusterId": "69812cbd3e4bf100f3deacb7",
+      "clusterName": "sgcCluster",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1770323947
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-02-05T20:41:44Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1770323947
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb7.37017.1770323938"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-02-05T20:41:44Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1770323947
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1770323954"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-02-05T20:41:44Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1770323947
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb9.37017.1770323925"
+        }
+      ],
+      "snapshotId": "6984ff8b3e4bf100f368ac18",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1770323947
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "mdb1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb8:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb3:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb9:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb2:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb4:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb-config2:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb-config1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "mdb7:37017",
+      "restoreRole": "RESTORE"
+    }
+  ]
+}
+2026-02-10 08:39:43,969 [DEBUG] STATUS 200
+2026-02-10 08:39:43,969 [DEBUG] {
+  "clusterMapping": [
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "mdb-config2",
+          "id": "mdb-config2:37017",
+          "port": 37017,
+          "rsId": "configRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb-config1",
+          "id": "mdb-config1:37017",
+          "port": 37017,
+          "rsId": "configRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb7",
+          "id": "mdb7:37017",
+          "port": 37017,
+          "rsId": "configRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "mdb1",
+          "id": "mdb1:37017",
+          "port": 37017,
+          "rsId": "sgcShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb8",
+          "id": "mdb8:37017",
+          "port": 37017,
+          "rsId": "sgcShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb3",
+          "id": "mdb3:37017",
+          "port": 37017,
+          "rsId": "sgcShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "mdb9",
+          "id": "mdb9:37017",
+          "port": 37017,
+          "rsId": "sgcShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb2",
+          "id": "mdb2:37017",
+          "port": 37017,
+          "rsId": "sgcShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "mdb4",
+          "id": "mdb4:37017",
+          "port": 37017,
+          "rsId": "sgcShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    }
+  ],
+  "restoreId": "698b432f4ad5445e02750fda"
+}
+2026-02-10 08:39:43,971 [INFO] Restore ID: 698b432f4ad5445e02750fda
+2026-02-10 08:39:43,971 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/start
+2026-02-10 08:39:44,263 [DEBUG] STATUS 200
+2026-02-10 08:39:44,264 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:39:44,264 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:39:44,401 [DEBUG] STATUS 200
+2026-02-10 08:39:44,401 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1770734383
+    }
+  ],
+  "state": "PENDING"
+}
+2026-02-10 08:39:44,401 [INFO] Restore state: PENDING
+2026-02-10 08:39:54,402 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:39:54,582 [DEBUG] STATUS 200
+2026-02-10 08:39:54,583 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "PENDING"
+}
+2026-02-10 08:39:54,583 [INFO] Restore state: PENDING
+2026-02-10 08:40:04,584 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:04,768 [DEBUG] STATUS 200
+2026-02-10 08:40:04,768 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "PENDING"
+}
+2026-02-10 08:40:04,769 [INFO] Restore state: PENDING
+2026-02-10 08:40:14,769 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:14,948 [DEBUG] STATUS 200
+2026-02-10 08:40:14,948 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "PENDING"
+}
+2026-02-10 08:40:14,948 [INFO] Restore state: PENDING
+2026-02-10 08:40:24,949 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:25,130 [DEBUG] STATUS 200
+2026-02-10 08:40:25,130 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:40:25,130 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:40:35,131 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:35,332 [DEBUG] STATUS 200
+2026-02-10 08:40:35,333 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:40:35,333 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:40:45,337 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:45,567 [DEBUG] STATUS 200
+2026-02-10 08:40:45,567 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:40:45,567 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:40:55,568 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:40:55,749 [DEBUG] STATUS 200
+2026-02-10 08:40:55,749 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:40:55,749 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:05,750 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:05,927 [DEBUG] STATUS 200
+2026-02-10 08:41:05,928 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:05,928 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:15,928 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:16,107 [DEBUG] STATUS 200
+2026-02-10 08:41:16,107 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:16,107 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:26,108 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:26,287 [DEBUG] STATUS 200
+2026-02-10 08:41:26,288 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:26,288 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:36,288 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:36,469 [DEBUG] STATUS 200
+2026-02-10 08:41:36,469 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:36,469 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:46,469 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:46,709 [DEBUG] STATUS 200
+2026-02-10 08:41:46,710 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:46,710 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:41:56,711 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:41:56,895 [DEBUG] STATUS 200
+2026-02-10 08:41:56,896 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:41:56,896 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:42:06,896 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:42:07,107 [DEBUG] STATUS 200
+2026-02-10 08:42:07,108 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:42:07,108 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:42:17,108 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:42:17,299 [DEBUG] STATUS 200
+2026-02-10 08:42:17,299 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:42:17,299 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:42:27,300 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:42:27,482 [DEBUG] STATUS 200
+2026-02-10 08:42:27,483 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1770734420
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-02-10 08:42:27,483 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-02-10 08:42:37,483 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:42:37,683 [DEBUG] STATUS 200
+2026-02-10 08:42:37,683 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734552
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734552
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734551
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734553
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734551
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734551
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734553
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734551
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1770734553
+    }
+  ],
+  "state": "COPY_FILES"
+}
+2026-02-10 08:42:37,683 [INFO] Restore state: COPY_FILES
+2026-02-10 08:42:37,684 [INFO] Waiting for FlashSystem volume mount on mdb1:37017 at /fimongo1/data
+2026-02-10 08:50:31,047 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:31,047 [DEBUG] {
+  "id": "mdb1:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:31,248 [DEBUG] STATUS 200
+2026-02-10 08:50:31,248 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:31,248 [INFO] Waiting for FlashSystem volume mount on mdb8:37017 at /fimongo1/data
+2026-02-10 08:50:31,798 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:31,798 [DEBUG] {
+  "id": "mdb8:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:31,911 [DEBUG] STATUS 200
+2026-02-10 08:50:31,911 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:31,911 [INFO] Waiting for FlashSystem volume mount on mdb3:37017 at /fimongo1/data
+2026-02-10 08:50:32,366 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:32,366 [DEBUG] {
+  "id": "mdb3:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:32,477 [DEBUG] STATUS 200
+2026-02-10 08:50:32,477 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:32,477 [INFO] Waiting for FlashSystem volume mount on mdb9:37017 at /fimongo1/data
+2026-02-10 08:50:32,934 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:32,934 [DEBUG] {
+  "id": "mdb9:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:33,043 [DEBUG] STATUS 200
+2026-02-10 08:50:33,043 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:33,043 [INFO] Waiting for FlashSystem volume mount on mdb2:37017 at /fimongo1/data
+2026-02-10 08:50:33,446 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:33,446 [DEBUG] {
+  "id": "mdb2:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:33,555 [DEBUG] STATUS 200
+2026-02-10 08:50:33,555 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:33,555 [INFO] Waiting for FlashSystem volume mount on mdb4:37017 at /fimongo1/data
+2026-02-10 08:50:33,950 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:33,950 [DEBUG] {
+  "id": "mdb4:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:34,059 [DEBUG] STATUS 200
+2026-02-10 08:50:34,059 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:34,059 [INFO] Waiting for FlashSystem volume mount on mdb-config2:37017 at /fimongo1/data
+2026-02-10 08:50:34,438 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:34,438 [DEBUG] {
+  "id": "mdb-config2:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:34,547 [DEBUG] STATUS 200
+2026-02-10 08:50:34,548 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:34,548 [INFO] Waiting for FlashSystem volume mount on mdb-config1:37017 at /fimongo1/data
+2026-02-10 08:50:35,030 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:35,030 [DEBUG] {
+  "id": "mdb-config1:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:35,140 [DEBUG] STATUS 200
+2026-02-10 08:50:35,140 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:35,140 [INFO] Waiting for FlashSystem volume mount on mdb7:37017 at /fimongo1/data
+2026-02-10 08:50:35,590 [DEBUG] API POST http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda/filesCopied
+2026-02-10 08:50:35,590 [DEBUG] {
+  "id": "mdb7:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-02-10 08:50:35,738 [DEBUG] STATUS 200
+2026-02-10 08:50:35,738 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-02-10 08:50:45,738 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:50:45,921 [DEBUG] STATUS 200
+2026-02-10 08:50:45,922 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735030
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735031
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735032
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735032
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735033
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735033
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735034
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735034
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735035
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:50:45,922 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:50:55,923 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:50:56,105 [DEBUG] STATUS 200
+2026-02-10 08:50:56,105 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735030
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735031
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735032
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735032
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735033
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735033
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735034
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735034
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735035
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:50:56,105 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:51:06,106 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:51:06,296 [DEBUG] STATUS 200
+2026-02-10 08:51:06,296 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735030
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1770735033
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:51:06,296 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:51:16,296 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:51:16,477 [DEBUG] STATUS 200
+2026-02-10 08:51:16,477 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:51:16,477 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:51:26,478 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:51:26,675 [DEBUG] STATUS 200
+2026-02-10 08:51:26,676 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:51:26,676 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:51:36,676 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:51:36,939 [DEBUG] STATUS 200
+2026-02-10 08:51:36,939 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 0
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-02-10 08:51:36,939 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-02-10 08:51:46,940 [DEBUG] API GET http://sb1.cpolab.ibm.com:8080/api/public/v1.0/backup/third_party/group/67eed68e0ba1970a07e16b77/restore/698b432f4ad5445e02750fda
+2026-02-10 08:51:47,121 [DEBUG] STATUS 200
+2026-02-10 08:51:47,121 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "sgcShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "sgcShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "configRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "mdb1",
+      "id": "mdb1:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb8",
+      "id": "mdb8:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb3",
+      "id": "mdb3:37017",
+      "port": 37017,
+      "rsId": "sgcShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb9",
+      "id": "mdb9:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb2",
+      "id": "mdb2:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb4",
+      "id": "mdb4:37017",
+      "port": 37017,
+      "rsId": "sgcShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config2",
+      "id": "mdb-config2:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb-config1",
+      "id": "mdb-config1:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    },
+    {
+      "error": null,
+      "hostname": "mdb7",
+      "id": "mdb7:37017",
+      "port": 37017,
+      "rsId": "configRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1770735100
+    }
+  ],
+  "state": "COMPLETED"
+}
+2026-02-10 08:51:47,122 [INFO] Restore state: COMPLETED
+2026-02-10 08:51:47,122 [INFO] Restore completed successfully

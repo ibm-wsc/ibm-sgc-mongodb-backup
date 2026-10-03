@@ -1,0 +1,115 @@
+{
+  "cluster_name": "testRep",
+  "snapshot_id": "6a42777bf9f8584e223647b0",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6a42777bf9f8584e223647b0",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb7",
+        "snapshot_name": "ORION16-FiServRep-mdb7_6a42777bf9f8584e223647b0",
+        "response": {
+          "id": "73",
+          "message": "Snapshot, id [73], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb8",
+        "snapshot_name": "ORION16-FiServRep-mdb8_6a42777bf9f8584e223647b0",
+        "response": {
+          "id": "74",
+          "message": "Snapshot, id [74], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-FiServRep-mdb9",
+        "snapshot_name": "ORION16-FiServRep-mdb9_6a42777bf9f8584e223647b0",
+        "response": {
+          "id": "75",
+          "message": "Snapshot, id [75], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo/data",
+        "hidden": false,
+        "hostname": "mdb8",
+        "id": "mdb8:27017",
+        "lastAgentPing": "2026-06-29T13:51:22Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-06-29T13:48:02Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 27017,
+        "priority": 1.0,
+        "rsId": "testRep",
+        "snapshotable": true,
+        "votes": 1
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1782740962
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-06-29T13:49:55Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 4136960,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1782740962
+          },
+          "member": "REPLICA_SET",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "testRep",
+          "shardId": null,
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.27017.1782740967"
+        }
+      ],
+      "snapshotId": "6a42777bf9f8584e223647b0",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1782740962
+      }
+    },
+    "state": "FINISHED"
+  },
+  "host_metadata": {
+    "testRep": {
+      "hostname": "mdb8:27017",
+      "mount_point": "/fimongo",
+      "fs_uuid": "74e80e43-bc28-47e8-93f7-7aa89f7364dc"
+    }
+  },
+  "created_at": "2026-06-29T13:51:31.923828+00:00"
+}

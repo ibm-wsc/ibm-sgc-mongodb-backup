@@ -1,0 +1,282 @@
+2026-09-23 09:40:06,016 [INFO] Starting Ops Manager snapshot workflow
+2026-09-23 09:40:06,016 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-09-23 09:40:06,192 [DEBUG] STATUS 200
+2026-09-23 09:40:06,192 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a67ab0a0b3bb92668612c59",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a67ab0a0b3bb92668612c59",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-09-23 09:40:06,193 [INFO] Cluster resolved: sgcCluster
+2026-09-23 09:40:06,193 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a39559ff9f8584e226bec72
+2026-09-23 09:40:06,381 [DEBUG] STATUS 200
+2026-09-23 09:40:06,381 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "sgcShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb13",
+          "id": "mdb13:37017",
+          "lastAgentPing": "2026-09-23T14:40:01Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:25Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb8",
+          "id": "mdb8:37017",
+          "lastAgentPing": "2026-09-23T14:39:15Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:35Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 10.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb1",
+          "id": "mdb1:37017",
+          "lastAgentPing": "2026-09-23T14:39:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:25Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb3",
+          "id": "mdb3:37017",
+          "lastAgentPing": "2026-09-23T14:39:44Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:25Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb11",
+          "id": "mdb11:37017",
+          "lastAgentPing": "2026-09-23T14:39:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:25Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "sgcShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb9",
+          "id": "mdb9:37017",
+          "lastAgentPing": "2026-09-22T19:57:17Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:32Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 0.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": false,
+          "votes": 0
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb12",
+          "id": "mdb12:37017",
+          "lastAgentPing": "2026-09-23T14:39:31Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:32Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb2",
+          "id": "mdb2:37017",
+          "lastAgentPing": "2026-09-23T14:39:26Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:32Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 0.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 0
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb4",
+          "id": "mdb4:37017",
+          "lastAgentPing": "2026-09-23T14:39:30Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:32Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb14",
+          "id": "mdb14:37017",
+          "lastAgentPing": "2026-09-23T14:39:58Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:32Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "sgcShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "configRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb7",
+          "id": "mdb7:37017",
+          "lastAgentPing": "2026-09-23T14:39:23Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:34Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config2",
+          "id": "mdb-config2:37017",
+          "lastAgentPing": "2026-09-23T14:40:02Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:36Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "mdb-config1",
+          "id": "mdb-config1:37017",
+          "lastAgentPing": "2026-09-23T14:39:30Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-09-23T14:36:36Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "configRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "snapshotId": "6ab044397c5bbb3be0d9fd71"
+}
+2026-09-23 09:40:06,381 [INFO] Selecting snapshot node for replicaSet: sgcShard_0
+2026-09-23 09:40:06,382 [INFO] Selected mdb13:37017 for sgcShard_0
+2026-09-23 09:40:06,382 [INFO] Selecting snapshot node for replicaSet: sgcShard_1
+2026-09-23 09:40:06,382 [INFO] Selected mdb12:37017 for sgcShard_1
+2026-09-23 09:40:06,382 [INFO] Selecting snapshot node for replicaSet: configRS
+2026-09-23 09:40:06,382 [INFO] Selected mdb-config1:37017 for configRS
+2026-09-23 09:40:06,382 [INFO] Snapshot nodes: ['mdb13:37017', 'mdb12:37017', 'mdb-config1:37017']
+2026-09-23 09:40:06,383 [INFO] === INFRASTRUCTURE REVIEW (no backup will be taken) ===
+2026-09-23 09:40:52,624 [INFO] Reviewing replication coverage for cluster 'sgcCluster'
+2026-09-23 09:40:52,624 [WARNING] Shard configRS: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:40:52,624 [WARNING] Shard sgcShard_0: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:40:52,624 [WARNING] Shard sgcShard_1: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:40:52,624 [WARNING] 3 shard(s) with no replicated dependency: configRS, sgcShard_0, sgcShard_1

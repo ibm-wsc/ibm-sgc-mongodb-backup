@@ -1,0 +1,877 @@
+2026-07-08 08:16:58,371 [INFO] Starting Ops Manager snapshot workflow
+2026-07-08 08:16:58,372 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-07-08 08:16:58,577 [DEBUG] STATUS 200
+2026-07-08 08:16:58,577 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39582af9f8584e226c2953",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39582af9f8584e226c2953",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-07-08 08:16:58,578 [INFO] Cluster resolved: testRep
+2026-07-08 08:16:58,578 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3
+2026-07-08 08:16:58,727 [DEBUG] STATUS 200
+2026-07-08 08:16:58,727 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "testRep",
+      "nodes": [
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "mdb7",
+          "id": "mdb7:27017",
+          "lastAgentPing": "2026-07-08T13:16:36Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-08T13:14:23Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "testRep",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "mdb8",
+          "id": "mdb8:27017",
+          "lastAgentPing": "2026-07-08T13:16:07Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-08T13:14:13Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "testRep",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo/data",
+          "hidden": false,
+          "hostname": "mdb9",
+          "id": "mdb9:27017",
+          "lastAgentPing": "2026-07-08T13:16:36Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-08T13:14:13Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 27017,
+          "priority": 1.0,
+          "rsId": "testRep",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "snapshotId": "6a4280b4f9f8584e2237151c"
+}
+2026-07-08 08:16:58,728 [INFO] Selecting snapshot node for replicaSet: testRep
+2026-07-08 08:16:58,732 [INFO] Selected mdb8:27017 for testRep
+2026-07-08 08:16:58,733 [INFO] Snapshot nodes: ['mdb8:27017']
+2026-07-08 08:16:58,734 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot
+2026-07-08 08:16:58,734 [DEBUG] {
+  "nodeIds": [
+    "mdb8:27017"
+  ]
+}
+2026-07-08 08:16:58,909 [DEBUG] STATUS 200
+2026-07-08 08:16:58,909 [DEBUG] {
+  "snapshotId": "6a4e4dca84006855cea6a399"
+}
+2026-07-08 08:16:58,910 [INFO] Snapshot ID: 6a4e4dca84006855cea6a399
+2026-07-08 08:16:58,911 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399/start
+2026-07-08 08:16:59,033 [DEBUG] STATUS 200
+2026-07-08 08:16:59,033 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-08 08:16:59,034 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:16:59,164 [DEBUG] STATUS 200
+2026-07-08 08:16:59,165 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:16:07Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:16:59,165 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:09,166 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:09,299 [DEBUG] STATUS 200
+2026-07-08 08:17:09,299 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:16:07Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:17:09,299 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:19,300 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:19,426 [DEBUG] STATUS 200
+2026-07-08 08:17:19,427 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:17:19,427 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:29,427 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:29,551 [DEBUG] STATUS 200
+2026-07-08 08:17:29,552 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:17:29,552 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:39,554 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:39,682 [DEBUG] STATUS 200
+2026-07-08 08:17:39,682 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:17:39,683 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:49,684 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:49,825 [DEBUG] STATUS 200
+2026-07-08 08:17:49,825 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:17:49,826 [INFO] Snapshot state: PENDING
+2026-07-08 08:17:59,826 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:17:59,999 [DEBUG] STATUS 200
+2026-07-08 08:17:59,999 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:14:13Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:00,000 [INFO] Snapshot state: PENDING
+2026-07-08 08:18:10,000 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:18:10,123 [DEBUG] STATUS 200
+2026-07-08 08:18:10,123 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:17:10Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:10,123 [INFO] Snapshot state: PENDING
+2026-07-08 08:18:20,124 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:18:20,294 [DEBUG] STATUS 200
+2026-07-08 08:18:20,295 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:18:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:20,295 [INFO] Snapshot state: PENDING
+2026-07-08 08:18:30,295 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:18:30,463 [DEBUG] STATUS 200
+2026-07-08 08:18:30,463 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:18:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:30,463 [INFO] Snapshot state: PENDING
+2026-07-08 08:18:40,464 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:18:40,617 [DEBUG] STATUS 200
+2026-07-08 08:18:40,618 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:18:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:40,618 [INFO] Snapshot state: PENDING
+2026-07-08 08:18:50,618 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:18:50,749 [DEBUG] STATUS 200
+2026-07-08 08:18:50,749 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:18:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:18:50,750 [INFO] Snapshot state: PENDING
+2026-07-08 08:19:00,750 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:00,997 [DEBUG] STATUS 200
+2026-07-08 08:19:00,997 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:18:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-08 08:19:00,997 [INFO] Snapshot state: PENDING
+2026-07-08 08:19:10,998 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:11,148 [DEBUG] STATUS 200
+2026-07-08 08:19:11,148 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "READY"
+}
+2026-07-08 08:19:11,148 [INFO] Snapshot state: READY
+2026-07-08 08:19:11,149 [INFO] Waiting for fileList on mdb8:27017
+2026-07-08 08:19:11,149 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399/mdb8:27017/fileList
+2026-07-08 08:19:11,299 [DEBUG] STATUS 200
+2026-07-08 08:19:11,300 [DEBUG] {
+  "fileList": [
+    {
+      "fileName": "/fimongo/data/journal/WiredTigerLog.0000000021",
+      "fileSize": 104857600
+    },
+    {
+      "fileName": "/fimongo/data/WiredTigerHS.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/_mdb_catalog.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-0-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/collection-10-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/collection-12-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-14-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-18-11609393837229788644.wt",
+      "fileSize": 6823936
+    },
+    {
+      "fileName": "/fimongo/data/collection-19-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/collection-2-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/collection-21-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/collection-23-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-26-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-28-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-30-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-31-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-33-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-36-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-39-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/collection-4-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-42-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-45-11609393837229788644.wt",
+      "fileSize": 53248
+    },
+    {
+      "fileName": "/fimongo/data/collection-6-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/collection-8-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-1-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-11-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-13-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-15-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-20-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-22-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-24-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-25-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-27-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-29-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-3-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-32-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/index-34-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-35-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-37-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-38-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-40-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-41-11609393837229788644.wt",
+      "fileSize": 4096
+    },
+    {
+      "fileName": "/fimongo/data/index-43-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/index-44-11609393837229788644.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/index-46-11609393837229788644.wt",
+      "fileSize": 53248
+    },
+    {
+      "fileName": "/fimongo/data/index-5-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-7-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/index-9-11609393837229788644.wt",
+      "fileSize": 20480
+    },
+    {
+      "fileName": "/fimongo/data/sizeStorer.wt",
+      "fileSize": 36864
+    },
+    {
+      "fileName": "/fimongo/data/WiredTiger.backup",
+      "fileSize": 92869
+    },
+    {
+      "fileName": "/fimongo/data/WiredTiger",
+      "fileSize": 50
+    }
+  ],
+  "finishedToken": null,
+  "nextToken": "ZDM0MjEwNmM1ZDQ2YTBiNDc2MjQ5ZTkwOTMyYWM1ZWRmOTYxYTcwMDBjMDAzZDQxYmZmMWU1YTkyYmY2MmZmZC1mYWFjZmMwNzY5MTk5ODc2NDMzZTllZDhlZjlkNjhjMS1hOTA2NDE0NmI2MDAyMzAyMzg5ZDkxMWMzZmQ1OWMwYTYzOWIxZGE0NTEzNWZhNjA5NTQ4MzY1ZWE3Y2JlNjk0YWI4ZGEyYTY5OWMyZWJlZGFmMzllNGU2OWJhOWMzNjlkNjg0MjBjNzMyNjQ0YWUyNjBlOGRmMmEwYTE3N2Q0Ny0wMzg3OGFmMGQ4MDllMjk5NjU0Y2EyMmExNTJjMTk2YzlhNjRhMWI0OTY4ZDUzNWFiMmJhMDZlYTBmZDUwZGNkYWE3NTlmNWE2N2QyNGM0MDdmYjcyYmNiMGUxYTlkMGQ2ZTViODY1YmI4ZDUxZWI5ZDkwMWQyNWJkZmRlZWE0OQ=="
+}
+2026-07-08 08:19:11,300 [INFO] fileList ready on mdb8:27017
+2026-07-08 08:19:11,300 [INFO] === TAKING IBM FLASHSYSTEM SNAPSHOT NOW ===
+2026-07-08 08:19:15,701 [INFO] FlashSystem snapshot completed successfully
+2026-07-08 08:19:15,701 [INFO] Replicating Snapshots to remote facilities
+2026-07-08 08:19:19,730 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399/finish
+2026-07-08 08:19:19,877 [DEBUG] STATUS 200
+2026-07-08 08:19:19,877 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-08 08:19:19,878 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:20,042 [DEBUG] STATUS 200
+2026-07-08 08:19:20,042 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "FINISHING"
+}
+2026-07-08 08:19:20,042 [INFO] Snapshot state: FINISHING
+2026-07-08 08:19:30,044 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:30,164 [DEBUG] STATUS 200
+2026-07-08 08:19:30,164 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "FINISHING"
+}
+2026-07-08 08:19:30,164 [INFO] Snapshot state: FINISHING
+2026-07-08 08:19:40,165 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:40,318 [DEBUG] STATUS 200
+2026-07-08 08:19:40,318 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "FINISHING"
+}
+2026-07-08 08:19:40,318 [INFO] Snapshot state: FINISHING
+2026-07-08 08:19:50,319 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:19:50,472 [DEBUG] STATUS 200
+2026-07-08 08:19:50,472 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "FINISHING"
+}
+2026-07-08 08:19:50,473 [INFO] Snapshot state: FINISHING
+2026-07-08 08:20:00,473 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:20:00,608 [DEBUG] STATUS 200
+2026-07-08 08:20:00,608 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:19:08Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "state": "FINISHING"
+}
+2026-07-08 08:20:00,609 [INFO] Snapshot state: FINISHING
+2026-07-08 08:20:10,609 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a387fc1f9f8584e2262c8f3/snapshot/6a4e4dca84006855cea6a399
+2026-07-08 08:20:10,838 [DEBUG] STATUS 200
+2026-07-08 08:20:10,838 [DEBUG] {
+  "nodes": [
+    {
+      "dbPath": "/fimongo/data",
+      "hidden": false,
+      "hostname": "mdb8",
+      "id": "mdb8:27017",
+      "lastAgentPing": "2026-07-08T13:20:09Z",
+      "memberState": "SECONDARY",
+      "mongodbVersion": "8.0.26",
+      "opTime": "2026-07-08T13:18:03Z",
+      "oplogStoreType": "thirdPartyOplogStore",
+      "port": 27017,
+      "priority": 1.0,
+      "rsId": "testRep",
+      "snapshotable": true,
+      "votes": 1
+    }
+  ],
+  "snapshotMetadata": {
+    "clusterId": "6a387fc1f9f8584e2262c8f3",
+    "clusterName": "testRep",
+    "groupId": "6a386221ee19a6537cc68a97",
+    "restoreTimestamp": {
+      "increment": 1,
+      "time": 1783516683
+    },
+    "rsSnapshotsMetadata": [
+      {
+        "defaultRWConcern": {
+          "defaultReadConcern": {
+            "level": "local"
+          },
+          "defaultReadConcernSource": "implicit",
+          "defaultWriteConcern": {
+            "w": "majority",
+            "wtimeout": 0
+          },
+          "defaultWriteConcernSource": "implicit",
+          "localUpdateWallClockTime": "2026-07-08T13:18:51Z"
+        },
+        "encryption": false,
+        "fcv": "8.0",
+        "fileSize": 7659520,
+        "incremental": true,
+        "isConfigShard": false,
+        "keyEncryptionUUID": null,
+        "lastOplogApplied": {
+          "increment": 1,
+          "time": 1783516683
+        },
+        "member": "REPLICA_SET",
+        "mongodbVersion": "8.0.26",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "rsId": "testRep",
+        "shardId": null,
+        "snapshotVersion": 1,
+        "srcBackupName": null,
+        "startupOptions": {},
+        "storageEngine": "wiredTiger",
+        "thisBackupName": "mdb8.27017.1783516689"
+      }
+    ],
+    "snapshotId": "6a4e4dca84006855cea6a399",
+    "snapshotTimestamp": {
+      "increment": 1,
+      "time": 1783516683
+    }
+  },
+  "state": "FINISHED"
+}
+2026-07-08 08:20:10,838 [INFO] Snapshot state: FINISHED
+2026-07-08 08:20:10,839 [INFO] Collecting host mount metadata
+2026-07-08 08:20:12,162 [INFO] Metadata saved: runs/testRep_20260708T131658Z\snapshot_metadata.json
+2026-07-08 08:20:12,163 [INFO] Snapshot workflow completed successfully
+2026-07-08 08:20:12,163 [INFO] === TAKING REMOTE IBM FLASHSYSTEM SNAPSHOT NOW ===
+2026-07-08 08:20:16,645 [INFO] === Backup Complete ===

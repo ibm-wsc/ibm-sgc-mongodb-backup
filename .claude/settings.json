@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Users\\\\MattKey\\\\.local\\\\bin\\\\python3.14.exe\" -m py_compile backup\\\\opsman_backup.py restore\\\\opsman_restore.py)",
+      "PowerShell(& \"C:\\\\ProgramData\\\\miniconda3\\\\python.exe\" -m py_compile ibmflashsystem\\\\flashsystem_utilities.py tests\\\\test_flashsystem_utilities.py)",
+      "Bash(ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no rmdb7 'udevadm info --query=property --name=\"/dev/vdg1\" 2>/dev/null')",
+      "Bash(/c/ProgramData/miniconda3/python.exe -c ' *)",
+      "PowerShell(& \"C:\\\\ProgramData\\\\miniconda3\\\\python.exe\" -m py_compile tests\\\\show_infrastructure_map.py)",
+      "Bash(ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no mdb-kvm1 \"virsh domblklist mdb-config1\")",
+      "Bash(ssh -o ConnectTimeout=5 -o BatchMode=yes -o StrictHostKeyChecking=no mdb7 'udevadm info --query=property --name=\"/dev/mapper/shard2p1\" 2>/dev/null')",
+      "PowerShell(& \"C:\\\\ProgramData\\\\miniconda3\\\\python.exe\" -m py_compile hosts\\\\host_utilities.py)"
+    ]
+  }
+}

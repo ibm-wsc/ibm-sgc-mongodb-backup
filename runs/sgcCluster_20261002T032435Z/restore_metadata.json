@@ -1,0 +1,40 @@
+{
+  "snapshot_id": "6abf242c7c5bbb3be0d9025a",
+  "source_cluster": "sgcCluster",
+  "target_cluster": "tgtCluster",
+  "backup_run_dir": "runs\\sgcCluster_20261002T032435Z",
+  "shard_map": {
+    "configRS": "tgtconfigRS",
+    "sgcShard_0": "tgtShard_0",
+    "sgcShard_1": "tgtShard_1"
+  },
+  "restore_id": "6ac00ab9457a6b8070195e8c",
+  "status": "in_progress",
+  "started_at": "2026-10-02T19:49:12.696612+00:00",
+  "completed_at": null,
+  "opsmanager": [
+    {
+      "step": "find_cluster",
+      "status": "completed",
+      "at": "2026-10-02T19:49:12.817685+00:00",
+      "cluster_id": "6a67ab0a0b3bb92668612c59"
+    },
+    {
+      "step": "validate_cluster_topology",
+      "status": "completed",
+      "at": "2026-10-02T19:49:13.205467+00:00"
+    },
+    {
+      "step": "start_restore",
+      "status": "completed",
+      "at": "2026-10-02T19:49:13.352710+00:00",
+      "restore_id": "6ac00ab9457a6b8070195e8c"
+    },
+    {
+      "step": "start_restore_execution",
+      "status": "completed",
+      "at": "2026-10-02T19:49:13.741575+00:00"
+    }
+  ],
+  "nodes": []
+}

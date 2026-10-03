@@ -1,0 +1,528 @@
+{
+  "cluster_name": "sgcCluster",
+  "snapshot_id": "6ab67aa97c5bbb3be0ad1185",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6ab67aa97c5bbb3be0ad1185",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION15-mdb7-sgcCluster",
+        "shard": "configRS",
+        "snapshot_name": "configRS_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "55",
+          "message": "Snapshot, id [55], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-mdb8-sgcCluster",
+        "shard": "sgcShard_0",
+        "snapshot_name": "sgcShard_0_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "56",
+          "message": "Snapshot, id [56], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION17-mdb9-sgcCluster",
+        "shard": "sgcShard_1",
+        "snapshot_name": "sgcShard_1_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "57",
+          "message": "Snapshot, id [57], successfully created or triggered"
+        }
+      }
+    ],
+    "replication": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "source_volume_group": "ORION15-mdb7-sgcCluster",
+        "volume_group": "ORION15-mdb7-sgcCluster-replicated",
+        "policy": "ReplicatedSnaps",
+        "target": "FS9500-3",
+        "snapshot_name": "configRS_6ab67aa97c5bbb3be0ad1185",
+        "response": ""
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "source_volume_group": "ORION16-mdb8-sgcCluster",
+        "volume_group": "ORION16-mdb8-sgcCluster-replicated",
+        "policy": "ReplicatedSnaps",
+        "target": "FS9500-3",
+        "snapshot_name": "sgcShard_0_6ab67aa97c5bbb3be0ad1185",
+        "response": ""
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "source_volume_group": "ORION17-mdb9-sgcCluster",
+        "volume_group": "ORION17-mdb9-sgcCluster-replicated",
+        "policy": "ReplicatedSnaps",
+        "target": "FS9500-3",
+        "snapshot_name": "sgcShard_1_6ab67aa97c5bbb3be0ad1185",
+        "response": ""
+      }
+    ],
+    "remote": [
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION15-mdb7-sgcCluster-replicated",
+        "shard": "configRS",
+        "snapshot_name": "configRS_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "17",
+          "message": "Snapshot, id [17], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION16-mdb8-sgcCluster-replicated",
+        "shard": "sgcShard_0",
+        "snapshot_name": "sgcShard_0_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "19",
+          "message": "Snapshot, id [19], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION17-mdb9-sgcCluster-replicated",
+        "shard": "sgcShard_1",
+        "snapshot_name": "sgcShard_1_6ab67aa97c5bbb3be0ad1185",
+        "response": {
+          "id": "20",
+          "message": "Snapshot, id [20], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "infrastructure_map": {
+    "cluster": "sgcCluster",
+    "shards": [
+      {
+        "rs_id": "configRS",
+        "nodes": [
+          {
+            "id": "mdb-config1:37017",
+            "shard": "configRS",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c",
+            "block_device": "/dev/vde1",
+            "hypervisor": "mdb-kvm1",
+            "hypervisor_scsi": "/dev/disk/by-id/dm-uuid-mpath-360050768138202df88000000000000bf",
+            "scsi_uuid": "60050768138202df88000000000000bf",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "186",
+            "volume_group": "ORION0A-kvm1-mdb-config1",
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb-config2:37017",
+            "shard": "configRS",
+            "member_state": "PRIMARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "f80255b0-165f-4c64-9657-c749993f9725",
+            "block_device": "/dev/mapper/cfg2_shard2-fimongo1",
+            "hypervisor": "mdb-kvm2",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "lvm-gnrys7yayyapr04fkl5rjcuhzmkimah15plfvnsuxepfd3l2ejwb0qvvvcoqqt9r",
+            "flashsystem": null,
+            "volume_id": null,
+            "volume_group": null,
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb7:37017",
+            "shard": "configRS",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c",
+            "block_device": "/dev/mapper/mpathn1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df8800000000000465",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "640",
+            "volume_group": "ORION15-mdb7-sgcCluster",
+            "replicated_clones": [
+              {
+                "name": "ORION15-mdb7-sgcCluster-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rs_id": "sgcShard_0",
+        "nodes": [
+          {
+            "id": "mdb11:37017",
+            "shard": "sgcShard_0",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "6ff26187-7249-4ca1-b008-5357f048b9a4",
+            "block_device": "/dev/vdc",
+            "hypervisor": "mdb-kvm1",
+            "hypervisor_scsi": "/dev/disk/by-id/dm-uuid-mpath-360050768138202df8800000000000473",
+            "scsi_uuid": "60050768138202df8800000000000473",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "648",
+            "volume_group": "ORION0A-mdb-kvm1-mdb11",
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb13:37017",
+            "shard": "sgcShard_0",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "67e96421-8e12-4dd7-88a6-349c37090ba2",
+            "block_device": "/dev/vdc",
+            "hypervisor": "mdb-kvm2",
+            "hypervisor_scsi": "/dev/disk/by-id/dm-uuid-mpath-360050768138302dab8000000000002de",
+            "scsi_uuid": "60050768138302dab8000000000002de",
+            "flashsystem": "fs9500-3.cpolab.ibm.com",
+            "volume_id": "412",
+            "volume_group": "ORION0B-kvm2-mdb13",
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb1:37017",
+            "shard": "sgcShard_0",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "b184ee19-d432-4025-85f0-a1c56b77538f",
+            "block_device": "/dev/mapper/mdb1_shard2-fimongo1",
+            "hypervisor": "mdb-kvm1",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "lvm-ux8rlcuzkznr08aps3k4amde4a3nfcd2denuktckrw1xupzk39zz2hjgwd3zzb1b",
+            "flashsystem": null,
+            "volume_id": null,
+            "volume_group": null,
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb3:37017",
+            "shard": "sgcShard_0",
+            "member_state": "PRIMARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "c9fc6807-bf71-4a76-bdf9-adac902354e5",
+            "block_device": "/dev/mapper/mdb3_shard2-fimongo1",
+            "hypervisor": "mdb-kvm2",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "lvm-ierj5xmkup6kpphsraa9sohhq8lqfjn5uxwkdzvzmrhqb0ggmgtcvbazlsvzd5hm",
+            "flashsystem": null,
+            "volume_id": null,
+            "volume_group": null,
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb8:37017",
+            "shard": "sgcShard_0",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30",
+            "block_device": "/dev/mapper/shard2p1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df88000000000000f6",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "240",
+            "volume_group": "ORION16-mdb8-sgcCluster",
+            "replicated_clones": [
+              {
+                "name": "ORION16-mdb8-sgcCluster-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rs_id": "sgcShard_1",
+        "nodes": [
+          {
+            "id": "mdb12:37017",
+            "shard": "sgcShard_1",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "426eb869-0b8d-43ea-b078-f95b51bc749f",
+            "block_device": "/dev/vdb",
+            "hypervisor": "mdb-kvm1",
+            "hypervisor_scsi": "/dev/disk/by-id/dm-uuid-mpath-360050768138202df8800000000000476",
+            "scsi_uuid": "60050768138202df8800000000000476",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "651",
+            "volume_group": "ORION0A-mdb-kvm1-mdb12",
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb14:37017",
+            "shard": "sgcShard_1",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "c4431e74-b430-42f1-bdfc-250191a1acc4",
+            "block_device": "/dev/vdc",
+            "hypervisor": "mdb-kvm3",
+            "hypervisor_scsi": "/dev/disk/by-id/dm-uuid-mpath-360050768138302dab8000000000002e6",
+            "scsi_uuid": "60050768138302dab8000000000002e6",
+            "flashsystem": "fs9500-3.cpolab.ibm.com",
+            "volume_id": "436",
+            "volume_group": "ORION0C-kvm3-mdb14",
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb2:37017",
+            "shard": "sgcShard_1",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "06ff1920-2a43-4d3c-9228-fcb36428f680",
+            "block_device": "/dev/mapper/mdb2_shard2-fimongo1",
+            "hypervisor": "mdb-kvm1",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "lvm-gptqtd6mx1d0nnbxsjhbcwhh2o7n8vydsqe8zptqapxonk38ovatst8jm31z6qxt",
+            "flashsystem": null,
+            "volume_id": null,
+            "volume_group": null,
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb4:37017",
+            "shard": "sgcShard_1",
+            "member_state": "PRIMARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "a9adcad6-ad1f-4730-9ca9-cb3b020e6c1b",
+            "block_device": "/dev/mapper/mdb4_shard2-fimongo1",
+            "hypervisor": "mdb-kvm2",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "lvm-uawnagzq4cep8b4afbf07b2pffqzhwfn3q39lzemih1un6ere5lillmic7irmyib",
+            "flashsystem": null,
+            "volume_id": null,
+            "volume_group": null,
+            "replicated_clones": []
+          },
+          {
+            "id": "mdb9:37017",
+            "shard": "sgcShard_1",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo1/data",
+            "filesystem_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59",
+            "block_device": "/dev/mapper/shard2p1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df88000000000000fb",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "245",
+            "volume_group": "ORION17-mdb9-sgcCluster",
+            "replicated_clones": [
+              {
+                "name": "ORION17-mdb9-sgcCluster-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb8",
+        "id": "mdb8:37017",
+        "lastAgentPing": "2026-09-25T13:49:42Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-09-25T13:47:11Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 0.0,
+        "rsId": "sgcShard_0",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb7",
+        "id": "mdb7:37017",
+        "lastAgentPing": "2026-09-25T13:49:52Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-09-25T13:47:15Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "configRS",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb9",
+        "id": "mdb9:37017",
+        "lastAgentPing": "2026-09-25T13:50:01Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-09-25T13:48:06Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 0.0,
+        "rsId": "sgcShard_1",
+        "snapshotable": true,
+        "votes": 1
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1790343896
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-09-25T13:47:11Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 2254056857600,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790343896
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1790343884"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-09-25T13:47:11Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 185581568,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790343896
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb7.37017.1790343891"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-09-25T13:48:10Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 2254661816320,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790343896
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb9.37017.1790343901"
+        }
+      ],
+      "snapshotId": "6ab67aa97c5bbb3be0ad1185",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1790343896
+      }
+    },
+    "state": "FINISHED"
+  },
+  "host_metadata": {
+    "sgcShard_0": [
+      {
+        "hostname": "mdb8:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "de77df98-cd1f-488b-8cac-facbccfd1e30"
+      }
+    ],
+    "sgcShard_1": [
+      {
+        "hostname": "mdb9:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "6daf0f6f-5246-489d-91a3-1587f885cd59"
+      }
+    ],
+    "configRS": [
+      {
+        "hostname": "mdb7:37017",
+        "mount_point": "/fimongo1",
+        "fs_uuid": "84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c"
+      }
+    ]
+  },
+  "created_at": "2026-09-25T13:51:17.926681+00:00"
+}

@@ -1,0 +1,282 @@
+2026-01-26 15:07:20,319 [INFO] Starting Ops Manager restore workflow
+2026-01-26 15:07:25,457 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:25,699 [INFO] Valid FlashSystem snapshot found: ORION15-mdb7_6977d13a3e4bf100f381e17e (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:25,700 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:25,917 [INFO] Valid FlashSystem snapshot found: ORION17-mdb9_6977d13a3e4bf100f381e17e (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:25,919 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:26,149 [INFO] Valid FlashSystem snapshot found: ORION16-mdb8_6977d13a3e4bf100f381e17e (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:26,149 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION0A-kvm1-mdb-config1 | ORION0A-kvm1-mdb-config1_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:26,375 [INFO] Valid FlashSystem snapshot found: ORION0A-kvm1-mdb-config1_6977d13a3e4bf100f381e17e (VG=ORION0A-kvm1-mdb-config1, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:26,375 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION0A-kvm1-mdb1 | ORION0A-kvm1-mdb1_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:26,663 [INFO] Valid FlashSystem snapshot found: ORION0A-kvm1-mdb1_6977d13a3e4bf100f381e17e (VG=ORION0A-kvm1-mdb1, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:26,663 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION0A-kvm1-mdb2 | ORION0A-kvm1-mdb2_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:26,868 [INFO] Valid FlashSystem snapshot found: ORION0A-kvm1-mdb2_6977d13a3e4bf100f381e17e (VG=ORION0A-kvm1-mdb2, system=fs9500-2.cpolab.ibm.com)
+2026-01-26 15:07:26,868 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | ORION0B-kvm2-mdb-config2 | ORION0B-kvm2-mdb-config2_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:27,078 [INFO] Valid FlashSystem snapshot found: ORION0B-kvm2-mdb-config2_6977d13a3e4bf100f381e17e (VG=ORION0B-kvm2-mdb-config2, system=fs9500-3.cpolab.ibm.com)
+2026-01-26 15:07:27,078 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | ORION0B-kvm2-mdb3 | ORION0B-kvm2-mdb3_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:27,277 [INFO] Valid FlashSystem snapshot found: ORION0B-kvm2-mdb3_6977d13a3e4bf100f381e17e (VG=ORION0B-kvm2-mdb3, system=fs9500-3.cpolab.ibm.com)
+2026-01-26 15:07:27,277 [DEBUG] Validating FlashSystem snapshot: fs9500-3.cpolab.ibm.com | ORION0B-kvm2-mdb4 | ORION0B-kvm2-mdb4_6977d13a3e4bf100f381e17e
+2026-01-26 15:07:27,472 [INFO] Valid FlashSystem snapshot found: ORION0B-kvm2-mdb4_6977d13a3e4bf100f381e17e (VG=ORION0B-kvm2-mdb4, system=fs9500-3.cpolab.ibm.com)
+2026-01-26 15:07:27,472 [INFO] DRY RUN — no restore APIs will be called
+2026-01-26 15:07:27,474 [INFO] {
+  "cluster_name": "sgcCluster",
+  "snapshot_id": "6977d13a3e4bf100f381e17e",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6977d13a3e4bf100f381e17e",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION15-mdb7",
+        "snapshot_name": "ORION15-mdb7_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "29",
+          "message": "Snapshot, id [29], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION17-mdb9",
+        "snapshot_name": "ORION17-mdb9_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "30",
+          "message": "Snapshot, id [30], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-mdb8",
+        "snapshot_name": "ORION16-mdb8_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "31",
+          "message": "Snapshot, id [31], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION0A-kvm1-mdb-config1",
+        "snapshot_name": "ORION0A-kvm1-mdb-config1_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "32",
+          "message": "Snapshot, id [32], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION0A-kvm1-mdb1",
+        "snapshot_name": "ORION0A-kvm1-mdb1_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "33",
+          "message": "Snapshot, id [33], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION0A-kvm1-mdb2",
+        "snapshot_name": "ORION0A-kvm1-mdb2_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "34",
+          "message": "Snapshot, id [34], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION0B-kvm2-mdb-config2",
+        "snapshot_name": "ORION0B-kvm2-mdb-config2_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "9",
+          "message": "Snapshot, id [9], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION0B-kvm2-mdb3",
+        "snapshot_name": "ORION0B-kvm2-mdb3_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "10",
+          "message": "Snapshot, id [10], successfully created or triggered"
+        }
+      },
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION0B-kvm2-mdb4",
+        "snapshot_name": "ORION0B-kvm2-mdb4_6977d13a3e4bf100f381e17e",
+        "response": {
+          "id": "11",
+          "message": "Snapshot, id [11], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb2",
+        "id": "mdb2:37017",
+        "lastAgentPing": "2026-01-26T20:46:22Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.10",
+        "opTime": "2026-01-26T20:44:48Z",
+        "oplogPath": "/oplog",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "sgcShard_1",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb8",
+        "id": "mdb8:37017",
+        "lastAgentPing": "2026-01-26T20:46:27Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.10",
+        "opTime": "2026-01-26T20:44:44Z",
+        "oplogPath": "/oplog",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "sgcShard_0",
+        "snapshotable": true,
+        "votes": 1
+      },
+      {
+        "dbPath": "/fimongo1/data",
+        "hidden": false,
+        "hostname": "mdb-config2",
+        "id": "mdb-config2:37017",
+        "lastAgentPing": "2026-01-26T20:46:36Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.10",
+        "opTime": "2026-01-26T20:44:54Z",
+        "oplogPath": "/oplog",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 37017,
+        "priority": 1.0,
+        "rsId": "configRS",
+        "snapshotable": true,
+        "votes": 1
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "695154083e4bf100f30af512",
+      "clusterName": "sgcCluster",
+      "groupId": "67eed68e0ba1970a07e16b77",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1769460094
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-01-26T20:44:46Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1769460094
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb2.37017.1769460079"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-01-26T20:41:54Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1769460094
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1769460090"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-01-26T20:41:54Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1769460094
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.10",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb-config2.37017.1769460095"
+        }
+      ],
+      "snapshotId": "6977d13a3e4bf100f381e17e",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1769460094
+      }
+    },
+    "state": "FINISHED"
+  },
+  "created_at": "2026-01-26T20:46:44.016554+00:00"
+}

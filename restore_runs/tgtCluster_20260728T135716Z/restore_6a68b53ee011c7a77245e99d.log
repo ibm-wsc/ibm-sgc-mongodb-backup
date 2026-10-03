@@ -1,0 +1,3441 @@
+2026-07-28 08:57:16,865 [INFO] Starting Ops Manager restore workflow
+2026-07-28 08:57:17,750 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_6a68b32f0b3bb92668791421
+2026-07-28 08:57:18,181 [INFO] Valid FlashSystem snapshot found: ORION15-mdb7_6a68b32f0b3bb92668791421 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:18,183 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_6a68b32f0b3bb92668791421
+2026-07-28 08:57:18,626 [INFO] Valid FlashSystem snapshot found: ORION16-mdb8_6a68b32f0b3bb92668791421 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:18,628 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_6a68b32f0b3bb92668791421
+2026-07-28 08:57:19,039 [INFO] Valid FlashSystem snapshot found: ORION17-mdb9_6a68b32f0b3bb92668791421 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:19,041 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION15-mdb7 | ORION15-mdb7_6a6376d00b3bb92668f7e0e6
+2026-07-28 08:57:19,460 [INFO] Valid FlashSystem snapshot found: ORION15-mdb7_6a6376d00b3bb92668f7e0e6 (VG=ORION15-mdb7, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:19,461 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION16-mdb8 | ORION16-mdb8_6a6376d00b3bb92668f7e0e6
+2026-07-28 08:57:19,869 [INFO] Valid FlashSystem snapshot found: ORION16-mdb8_6a6376d00b3bb92668f7e0e6 (VG=ORION16-mdb8, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:19,870 [DEBUG] Validating FlashSystem snapshot: fs9500-2.cpolab.ibm.com | ORION17-mdb9 | ORION17-mdb9_6a6376d00b3bb92668f7e0e6
+2026-07-28 08:57:20,275 [INFO] Valid FlashSystem snapshot found: ORION17-mdb9_6a6376d00b3bb92668f7e0e6 (VG=ORION17-mdb9, system=fs9500-2.cpolab.ibm.com)
+2026-07-28 08:57:20,276 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-07-28 08:57:20,447 [DEBUG] STATUS 200
+2026-07-28 08:57:20,447 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a67ab0a0b3bb92668612c59",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a67ab0a0b3bb92668612c59",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-07-28 08:57:20,447 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59
+2026-07-28 08:57:20,601 [DEBUG] STATUS 200
+2026-07-28 08:57:20,601 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tgtShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "lastAgentPing": "2026-07-28T13:56:27Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "lastAgentPing": "2026-07-28T13:57:02Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "lastAgentPing": "2026-07-28T13:56:36Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "lastAgentPing": "2026-07-28T13:57:15Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:16Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "lastAgentPing": "2026-07-28T13:56:17Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:16Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "lastAgentPing": "2026-07-28T13:56:35Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:26Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtconfigRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "lastAgentPing": "2026-07-28T13:56:56Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:20Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "lastAgentPing": "2026-07-28T13:57:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:20Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "lastAgentPing": "2026-07-28T13:56:46Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:22Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ]
+}
+2026-07-28 08:57:20,602 [INFO] Source replica sets : 3
+2026-07-28 08:57:20,602 [INFO] Destination replica sets : 3
+2026-07-28 08:57:20,602 [INFO] Cluster topology validation passed
+2026-07-28 08:57:20,602 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59
+2026-07-28 08:57:20,750 [DEBUG] STATUS 200
+2026-07-28 08:57:20,751 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tgtShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "lastAgentPing": "2026-07-28T13:56:27Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "lastAgentPing": "2026-07-28T13:57:02Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "lastAgentPing": "2026-07-28T13:56:36Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:24Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "lastAgentPing": "2026-07-28T13:57:15Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:16Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "lastAgentPing": "2026-07-28T13:56:17Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:16Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "lastAgentPing": "2026-07-28T13:56:35Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:26Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtconfigRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "lastAgentPing": "2026-07-28T13:56:56Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:20Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "lastAgentPing": "2026-07-28T13:57:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:20Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "lastAgentPing": "2026-07-28T13:56:46Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-07-28T13:56:22Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ]
+}
+2026-07-28 08:57:20,751 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59/restore
+2026-07-28 08:57:20,751 [DEBUG] {
+  "snapshotsMetadata": [
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1785246576
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-07-28T13:53:30Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 3759300608,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1785246576
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1785246565"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-07-28T13:53:30Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 67698688,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1785246576
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb7.37017.1785246576"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-07-28T13:53:30Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 3841028096,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1785246576
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb9.37017.1785246544"
+        }
+      ],
+      "snapshotId": "6a68b32f0b3bb92668791421",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1785246576
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rmdb9:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb4:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb2:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb8:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb3:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb7:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb-config1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb-config2:37017",
+      "restoreRole": "RESTORE"
+    }
+  ]
+}
+2026-07-28 08:57:20,884 [DEBUG] STATUS 200
+2026-07-28 08:57:20,884 [DEBUG] {
+  "clusterMapping": [
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "restoreId": "6a68b53ee011c7a77245e99d"
+}
+2026-07-28 08:57:20,885 [INFO] Restore ID: 6a68b53ee011c7a77245e99d
+2026-07-28 08:57:20,885 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/start
+2026-07-28 08:57:21,211 [DEBUG] STATUS 200
+2026-07-28 08:57:21,211 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 08:57:21,212 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:57:21,340 [DEBUG] STATUS 200
+2026-07-28 08:57:21,340 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-28 08:57:21,340 [INFO] Restore state: PENDING
+2026-07-28 08:57:31,340 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:57:31,475 [DEBUG] STATUS 200
+2026-07-28 08:57:31,476 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-28 08:57:31,476 [INFO] Restore state: PENDING
+2026-07-28 08:57:41,477 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:57:41,627 [DEBUG] STATUS 200
+2026-07-28 08:57:41,627 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-28 08:57:41,628 [INFO] Restore state: PENDING
+2026-07-28 08:57:51,629 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:57:51,758 [DEBUG] STATUS 200
+2026-07-28 08:57:51,759 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "PENDING",
+      "stateUpdateTime": 1785247039
+    }
+  ],
+  "state": "PENDING"
+}
+2026-07-28 08:57:51,759 [INFO] Restore state: PENDING
+2026-07-28 08:58:01,759 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:01,890 [DEBUG] STATUS 200
+2026-07-28 08:58:01,890 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:01,891 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:58:11,891 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:12,021 [DEBUG] STATUS 200
+2026-07-28 08:58:12,021 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:12,022 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:58:22,022 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:22,244 [DEBUG] STATUS 200
+2026-07-28 08:58:22,244 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:22,245 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:58:32,246 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:32,376 [DEBUG] STATUS 200
+2026-07-28 08:58:32,376 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:32,377 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:58:42,378 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:42,520 [DEBUG] STATUS 200
+2026-07-28 08:58:42,521 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:42,521 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:58:52,522 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:58:52,654 [DEBUG] STATUS 200
+2026-07-28 08:58:52,655 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:58:52,655 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:02,655 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:02,789 [DEBUG] STATUS 200
+2026-07-28 08:59:02,789 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:59:02,790 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:12,790 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:12,944 [DEBUG] STATUS 200
+2026-07-28 08:59:12,945 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:59:12,945 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:22,946 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:23,133 [DEBUG] STATUS 200
+2026-07-28 08:59:23,133 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:59:23,134 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:33,134 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:33,268 [DEBUG] STATUS 200
+2026-07-28 08:59:33,269 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:59:33,269 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:43,270 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:43,406 [DEBUG] STATUS 200
+2026-07-28 08:59:43,406 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247178
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247175
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "SHUTDOWN_IN_PROGRESS",
+      "stateUpdateTime": 1785247072
+    }
+  ],
+  "state": "SHUTDOWN_IN_PROGRESS"
+}
+2026-07-28 08:59:43,407 [INFO] Restore state: SHUTDOWN_IN_PROGRESS
+2026-07-28 08:59:53,407 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 08:59:53,541 [DEBUG] STATUS 200
+2026-07-28 08:59:53,541 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247182
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247178
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247179
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247175
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247183
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COPY_FILES",
+      "stateUpdateTime": 1785247182
+    }
+  ],
+  "state": "COPY_FILES"
+}
+2026-07-28 08:59:53,541 [INFO] Restore state: COPY_FILES
+2026-07-28 09:00:03,542 [INFO] Unmounting MongoDB data volumes on all hosts
+2026-07-28 09:00:04,524 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:00:05,507 [INFO] Host rmdb4 is currently busy
+2026-07-28 09:00:06,491 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:00:07,509 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:00:08,545 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:00:09,474 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:00:10,473 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:00:11,449 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:00:12,476 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:00:12,476 [INFO] Busy hosts: 9
+2026-07-28 09:00:23,444 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:00:24,478 [INFO] Host rmdb4 is currently busy
+2026-07-28 09:00:25,482 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:00:26,467 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:00:27,447 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:00:28,411 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:00:29,395 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:00:30,397 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:00:31,406 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:00:31,407 [INFO] Busy hosts: 9
+2026-07-28 09:00:42,381 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:00:43,371 [INFO] Host rmdb4 is currently busy
+2026-07-28 09:00:44,341 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:00:45,359 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:00:46,325 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:00:47,345 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:00:48,373 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:00:49,405 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:00:50,372 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:00:50,372 [INFO] Busy hosts: 9
+2026-07-28 09:01:01,418 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:01:03,326 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:01:04,276 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:01:05,242 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:01:06,239 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:01:07,256 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:01:08,225 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:01:09,189 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:01:09,189 [INFO] Busy hosts: 8
+2026-07-28 09:01:20,216 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:01:22,166 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:01:23,170 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:01:24,183 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:01:25,150 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:01:26,151 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:01:27,226 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:01:28,220 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:01:28,220 [INFO] Busy hosts: 8
+2026-07-28 09:01:39,252 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:01:41,176 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:01:42,217 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:01:43,235 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:01:44,165 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:01:45,121 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:01:46,137 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:01:47,109 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:01:47,109 [INFO] Busy hosts: 8
+2026-07-28 09:01:58,212 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:02:00,137 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:02:01,088 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:02:02,041 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:02:03,036 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:02:03,989 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:02:04,941 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:02:05,924 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:02:05,924 [INFO] Busy hosts: 8
+2026-07-28 09:02:16,958 [INFO] Host rmdb9 is currently busy
+2026-07-28 09:02:18,910 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:02:19,912 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:02:20,861 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:02:21,874 [INFO] Host rmdb3 is currently busy
+2026-07-28 09:02:22,928 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:02:23,949 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:02:24,977 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:02:24,977 [INFO] Busy hosts: 8
+2026-07-28 09:02:37,992 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:02:38,928 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:02:39,884 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:02:41,835 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:02:42,795 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:02:43,817 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:02:43,818 [INFO] Busy hosts: 6
+2026-07-28 09:02:56,745 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:02:57,698 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:02:58,703 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:03:00,624 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:03:01,616 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:03:02,563 [INFO] Host rmdb-config2 is currently busy
+2026-07-28 09:03:02,563 [INFO] Busy hosts: 6
+2026-07-28 09:03:15,489 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:03:16,463 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:03:17,494 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:03:19,447 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:03:20,403 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:03:21,376 [INFO] Busy hosts: 5
+2026-07-28 09:03:34,271 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:03:35,330 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:03:36,282 [INFO] Host rmdb1 is currently busy
+2026-07-28 09:03:38,282 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:03:39,266 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:03:40,262 [INFO] Busy hosts: 5
+2026-07-28 09:03:53,169 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:03:54,138 [INFO] Host rmdb8 is currently busy
+2026-07-28 09:03:57,134 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:03:58,106 [INFO] Host rmdb-config1 is currently busy
+2026-07-28 09:03:59,056 [INFO] Busy hosts: 4
+2026-07-28 09:04:11,997 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:04:15,894 [INFO] Host rmdb7 is currently busy
+2026-07-28 09:04:17,858 [INFO] Busy hosts: 2
+2026-07-28 09:04:30,908 [INFO] Host rmdb2 is currently busy
+2026-07-28 09:05:37,929 [INFO] Busy hosts: 1
+2026-07-28 09:05:56,812 [INFO] Busy hosts: 0
+2026-07-28 09:05:56,812 [INFO] Flushing cache after umount on rmdb9
+2026-07-28 09:05:57,675 [INFO] Flushing cache after umount on rmdb4
+2026-07-28 09:05:58,578 [INFO] Flushing cache after umount on rmdb2
+2026-07-28 09:05:59,479 [INFO] Flushing cache after umount on rmdb8
+2026-07-28 09:06:00,398 [INFO] Flushing cache after umount on rmdb1
+2026-07-28 09:06:01,367 [INFO] Flushing cache after umount on rmdb3
+2026-07-28 09:06:02,323 [INFO] Flushing cache after umount on rmdb7
+2026-07-28 09:06:03,197 [INFO] Flushing cache after umount on rmdb-config1
+2026-07-28 09:06:04,095 [INFO] Flushing cache after umount on rmdb-config2
+2026-07-28 09:06:04,965 [INFO] Resolving KVM cache on host: mdb-kvm1
+2026-07-28 09:06:09,982 [INFO] Resolving KVM cache on host: mdb-kvm2
+2026-07-28 09:06:14,997 [INFO] Resolving KVM cache on host: mdb-kvm3
+2026-07-28 09:06:20,008 [INFO] Target nodes unmounted
+2026-07-28 09:06:20,008 [INFO] Refreshing target volumes from snapshots
+2026-07-28 09:08:10,750 [INFO] Mounting, verifying, and marking nodes as filesCopied
+2026-07-28 09:08:10,750 [INFO] Mounting filesystem on target host rmdb9:37017
+2026-07-28 09:08:10,750 [INFO] Partprobe on rmdb9 to detect filesystem updates
+2026-07-28 09:08:11,784 [INFO] Mounting UUID=6daf0f6f-5246-489d-91a3-1587f885cd59 on rmdb9 at /fimongo1
+2026-07-28 09:08:12,680 [INFO] Mounted successfully on rmdb9
+2026-07-28 09:08:13,465 [INFO] chown mongod:mongod applied on rmdb9 at /fimongo1
+2026-07-28 09:08:13,465 [INFO] Verifying mount on target host rmdb9:37017
+2026-07-28 09:08:14,263 [INFO] Mount verified on rmdb9: /fimongo1
+2026-07-28 09:08:15,067 [INFO] rmdb9: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:08:15,067 [INFO] Marking node rmdb9:37017 as filesCopied
+2026-07-28 09:08:15,067 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:08:15,067 [DEBUG] {
+  "id": "rmdb9:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:08:15,245 [DEBUG] STATUS 200
+2026-07-28 09:08:15,245 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:08:20,247 [INFO] Mounting filesystem on target host rmdb4:37017
+2026-07-28 09:08:20,247 [INFO] Partprobe on rmdb4 to detect filesystem updates
+2026-07-28 09:08:21,279 [INFO] Mounting UUID=6daf0f6f-5246-489d-91a3-1587f885cd59 on rmdb4 at /fimongo1
+2026-07-28 09:08:22,119 [INFO] Mounted successfully on rmdb4
+2026-07-28 09:08:22,908 [INFO] chown mongod:mongod applied on rmdb4 at /fimongo1
+2026-07-28 09:08:22,908 [INFO] Verifying mount on target host rmdb4:37017
+2026-07-28 09:08:23,703 [INFO] Mount verified on rmdb4: /fimongo1
+2026-07-28 09:08:24,486 [INFO] rmdb4: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:08:24,486 [INFO] Marking node rmdb4:37017 as filesCopied
+2026-07-28 09:08:24,487 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:08:24,487 [DEBUG] {
+  "id": "rmdb4:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:08:24,607 [DEBUG] STATUS 200
+2026-07-28 09:08:24,607 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:08:29,608 [INFO] Mounting filesystem on target host rmdb2:37017
+2026-07-28 09:08:29,608 [INFO] Partprobe on rmdb2 to detect filesystem updates
+2026-07-28 09:08:30,675 [INFO] Mounting UUID=6daf0f6f-5246-489d-91a3-1587f885cd59 on rmdb2 at /fimongo1
+2026-07-28 09:08:31,542 [INFO] Mounted successfully on rmdb2
+2026-07-28 09:08:32,357 [INFO] chown mongod:mongod applied on rmdb2 at /fimongo1
+2026-07-28 09:08:32,357 [INFO] Verifying mount on target host rmdb2:37017
+2026-07-28 09:08:33,149 [INFO] Mount verified on rmdb2: /fimongo1
+2026-07-28 09:08:33,947 [INFO] rmdb2: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:08:33,948 [INFO] Marking node rmdb2:37017 as filesCopied
+2026-07-28 09:08:33,948 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:08:33,948 [DEBUG] {
+  "id": "rmdb2:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:08:34,070 [DEBUG] STATUS 200
+2026-07-28 09:08:34,070 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:08:39,070 [INFO] Mounting filesystem on target host rmdb8:37017
+2026-07-28 09:08:39,070 [INFO] Partprobe on rmdb8 to detect filesystem updates
+2026-07-28 09:08:40,071 [INFO] Mounting UUID=de77df98-cd1f-488b-8cac-facbccfd1e30 on rmdb8 at /fimongo1
+2026-07-28 09:08:40,926 [INFO] Mounted successfully on rmdb8
+2026-07-28 09:08:41,758 [INFO] chown mongod:mongod applied on rmdb8 at /fimongo1
+2026-07-28 09:08:41,758 [INFO] Verifying mount on target host rmdb8:37017
+2026-07-28 09:08:42,585 [INFO] Mount verified on rmdb8: /fimongo1
+2026-07-28 09:08:43,382 [INFO] rmdb8: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:08:43,382 [INFO] Marking node rmdb8:37017 as filesCopied
+2026-07-28 09:08:43,382 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:08:43,382 [DEBUG] {
+  "id": "rmdb8:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:08:43,502 [DEBUG] STATUS 200
+2026-07-28 09:08:43,503 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:08:48,504 [INFO] Mounting filesystem on target host rmdb1:37017
+2026-07-28 09:08:48,504 [INFO] Partprobe on rmdb1 to detect filesystem updates
+2026-07-28 09:08:49,517 [INFO] Mounting UUID=de77df98-cd1f-488b-8cac-facbccfd1e30 on rmdb1 at /fimongo1
+2026-07-28 09:08:50,780 [INFO] Mounted successfully on rmdb1
+2026-07-28 09:08:51,592 [INFO] chown mongod:mongod applied on rmdb1 at /fimongo1
+2026-07-28 09:08:51,592 [INFO] Verifying mount on target host rmdb1:37017
+2026-07-28 09:08:52,438 [INFO] Mount verified on rmdb1: /fimongo1
+2026-07-28 09:08:53,221 [INFO] rmdb1: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:08:53,222 [INFO] Marking node rmdb1:37017 as filesCopied
+2026-07-28 09:08:53,222 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:08:53,222 [DEBUG] {
+  "id": "rmdb1:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:08:53,341 [DEBUG] STATUS 200
+2026-07-28 09:08:53,341 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:08:58,342 [INFO] Mounting filesystem on target host rmdb3:37017
+2026-07-28 09:08:58,342 [INFO] Partprobe on rmdb3 to detect filesystem updates
+2026-07-28 09:08:59,375 [INFO] Mounting UUID=de77df98-cd1f-488b-8cac-facbccfd1e30 on rmdb3 at /fimongo1
+2026-07-28 09:09:00,272 [INFO] Mounted successfully on rmdb3
+2026-07-28 09:09:01,075 [INFO] chown mongod:mongod applied on rmdb3 at /fimongo1
+2026-07-28 09:09:01,075 [INFO] Verifying mount on target host rmdb3:37017
+2026-07-28 09:09:01,870 [INFO] Mount verified on rmdb3: /fimongo1
+2026-07-28 09:09:02,718 [INFO] rmdb3: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:09:02,718 [INFO] Marking node rmdb3:37017 as filesCopied
+2026-07-28 09:09:02,719 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:09:02,719 [DEBUG] {
+  "id": "rmdb3:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:09:02,840 [DEBUG] STATUS 200
+2026-07-28 09:09:02,840 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:09:07,841 [INFO] Mounting filesystem on target host rmdb7:37017
+2026-07-28 09:09:07,841 [INFO] Partprobe on rmdb7 to detect filesystem updates
+2026-07-28 09:09:08,987 [INFO] Mounting UUID=84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c on rmdb7 at /fimongo1
+2026-07-28 09:09:09,890 [INFO] Mounted successfully on rmdb7
+2026-07-28 09:09:10,746 [INFO] chown mongod:mongod applied on rmdb7 at /fimongo1
+2026-07-28 09:09:10,746 [INFO] Verifying mount on target host rmdb7:37017
+2026-07-28 09:09:11,548 [INFO] Mount verified on rmdb7: /fimongo1
+2026-07-28 09:09:12,344 [INFO] rmdb7: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:09:12,344 [INFO] Marking node rmdb7:37017 as filesCopied
+2026-07-28 09:09:12,344 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:09:12,344 [DEBUG] {
+  "id": "rmdb7:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:09:12,464 [DEBUG] STATUS 200
+2026-07-28 09:09:12,464 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:09:17,465 [INFO] Mounting filesystem on target host rmdb-config1:37017
+2026-07-28 09:09:17,465 [INFO] Partprobe on rmdb-config1 to detect filesystem updates
+2026-07-28 09:09:18,536 [INFO] Mounting UUID=84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c on rmdb-config1 at /fimongo1
+2026-07-28 09:09:19,388 [INFO] Mounted successfully on rmdb-config1
+2026-07-28 09:09:20,259 [INFO] chown mongod:mongod applied on rmdb-config1 at /fimongo1
+2026-07-28 09:09:20,259 [INFO] Verifying mount on target host rmdb-config1:37017
+2026-07-28 09:09:21,080 [INFO] Mount verified on rmdb-config1: /fimongo1
+2026-07-28 09:09:21,948 [INFO] rmdb-config1: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:09:21,949 [INFO] Marking node rmdb-config1:37017 as filesCopied
+2026-07-28 09:09:21,949 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:09:21,949 [DEBUG] {
+  "id": "rmdb-config1:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:09:22,129 [DEBUG] STATUS 200
+2026-07-28 09:09:22,129 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:09:27,130 [INFO] Mounting filesystem on target host rmdb-config2:37017
+2026-07-28 09:09:27,130 [INFO] Partprobe on rmdb-config2 to detect filesystem updates
+2026-07-28 09:09:28,212 [INFO] Mounting UUID=84b467c1-5c1d-4be1-8e3a-7f255ecdbd6c on rmdb-config2 at /fimongo1
+2026-07-28 09:09:29,108 [INFO] Mounted successfully on rmdb-config2
+2026-07-28 09:09:29,908 [INFO] chown mongod:mongod applied on rmdb-config2 at /fimongo1
+2026-07-28 09:09:29,908 [INFO] Verifying mount on target host rmdb-config2:37017
+2026-07-28 09:09:30,703 [INFO] Mount verified on rmdb-config2: /fimongo1
+2026-07-28 09:09:31,552 [INFO] rmdb-config2: /fimongo1/data/fileList.txt exists with correct mongod:mongod ownership
+2026-07-28 09:09:31,552 [INFO] Marking node rmdb-config2:37017 as filesCopied
+2026-07-28 09:09:31,552 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d/filesCopied
+2026-07-28 09:09:31,552 [DEBUG] {
+  "id": "rmdb-config2:37017",
+  "dbPath": "/fimongo1/data"
+}
+2026-07-28 09:09:31,690 [DEBUG] STATUS 200
+2026-07-28 09:09:31,690 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-07-28 09:09:36,691 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:09:36,846 [DEBUG] STATUS 200
+2026-07-28 09:09:36,846 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:09:36,847 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:09:46,847 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:09:46,983 [DEBUG] STATUS 200
+2026-07-28 09:09:46,983 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:09:46,983 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:09:56,984 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:09:57,135 [DEBUG] STATUS 200
+2026-07-28 09:09:57,135 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:09:57,136 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:10:07,137 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:10:07,274 [DEBUG] STATUS 200
+2026-07-28 09:10:07,274 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:10:07,274 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:10:17,275 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:10:17,413 [DEBUG] STATUS 200
+2026-07-28 09:10:17,413 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:10:17,413 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:10:27,414 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:10:27,613 [DEBUG] STATUS 200
+2026-07-28 09:10:27,614 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:10:27,614 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:10:37,614 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:10:37,751 [DEBUG] STATUS 200
+2026-07-28 09:10:37,751 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247693
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247702
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247712
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247721
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247731
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247740
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247750
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247760
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "RECOVERY_IN_PROGRESS",
+      "stateUpdateTime": 1785247769
+    }
+  ],
+  "state": "RECOVERY_IN_PROGRESS"
+}
+2026-07-28 09:10:37,751 [INFO] Restore state: RECOVERY_IN_PROGRESS
+2026-07-28 09:10:47,752 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6a68b53ee011c7a77245e99d
+2026-07-28 09:10:47,887 [DEBUG] STATUS 200
+2026-07-28 09:10:47,887 [DEBUG] {
+  "clusterMapping": [
+    {
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "nodes": [
+    {
+      "error": null,
+      "hostname": "rmdb9",
+      "id": "rmdb9:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb4",
+      "id": "rmdb4:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb2",
+      "id": "rmdb2:37017",
+      "port": 37017,
+      "rsId": "tgtShard_1",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb8",
+      "id": "rmdb8:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb1",
+      "id": "rmdb1:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb3",
+      "id": "rmdb3:37017",
+      "port": 37017,
+      "rsId": "tgtShard_0",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb7",
+      "id": "rmdb7:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config1",
+      "id": "rmdb-config1:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    },
+    {
+      "error": null,
+      "hostname": "rmdb-config2",
+      "id": "rmdb-config2:37017",
+      "port": 37017,
+      "rsId": "tgtconfigRS",
+      "state": "COMPLETED",
+      "stateUpdateTime": 1785247843
+    }
+  ],
+  "state": "COMPLETED"
+}
+2026-07-28 09:10:47,888 [INFO] Restore state: COMPLETED
+2026-07-28 09:10:57,888 [INFO] Restore completed successfully

@@ -1,0 +1,196 @@
+{
+  "cluster_name": "testRep",
+  "snapshot_id": "6ab5f2f27c5bbb3be09b1416",
+  "ibm_flashsystem_snapshot": {
+    "snapshot_id": "6ab5f2f27c5bbb3be09b1416",
+    "results": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "volume_group": "ORION16-mdb8-testRep",
+        "shard": "testRep",
+        "snapshot_name": "testRep_6ab5f2f27c5bbb3be09b1416",
+        "response": {
+          "id": "54",
+          "message": "Snapshot, id [54], successfully created or triggered"
+        }
+      }
+    ],
+    "replication": [
+      {
+        "flashsystem": "fs9500-2.cpolab.ibm.com",
+        "source_volume_group": "ORION16-mdb8-testRep",
+        "volume_group": "ORION16-mdb8-testRep-replicated",
+        "policy": "ReplicatedSnaps",
+        "target": "FS9500-3",
+        "snapshot_name": "testRep_6ab5f2f27c5bbb3be09b1416",
+        "response": ""
+      }
+    ],
+    "remote": [
+      {
+        "flashsystem": "fs9500-3.cpolab.ibm.com",
+        "volume_group": "ORION16-mdb8-testRep-replicated",
+        "shard": "testRep",
+        "snapshot_name": "testRep_6ab5f2f27c5bbb3be09b1416",
+        "response": {
+          "id": "15",
+          "message": "Snapshot, id [15], successfully created or triggered"
+        }
+      }
+    ]
+  },
+  "infrastructure_map": {
+    "cluster": "testRep",
+    "shards": [
+      {
+        "rs_id": "testRep",
+        "nodes": [
+          {
+            "id": "mdb7:27017",
+            "shard": "testRep",
+            "member_state": "PRIMARY",
+            "db_path": "/fimongo/data",
+            "filesystem_uuid": "74e80e43-bc28-47e8-93f7-7aa89f7364dc",
+            "block_device": "/dev/mapper/mpathl1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df88000000000001b5",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "323",
+            "volume_group": "ORION15-mdb7-testRep",
+            "replicated_clones": [
+              {
+                "name": "ORION15-mdb7-testRep-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          },
+          {
+            "id": "mdb8:27017",
+            "shard": "testRep",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo/data",
+            "filesystem_uuid": "6c632403-82a8-4eeb-853d-f42a74ac10b3",
+            "block_device": "/dev/mapper/mpathi1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df8800000000000131",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "288",
+            "volume_group": "ORION16-mdb8-testRep",
+            "replicated_clones": [
+              {
+                "name": "ORION16-mdb8-testRep-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          },
+          {
+            "id": "mdb9:27017",
+            "shard": "testRep",
+            "member_state": "SECONDARY",
+            "db_path": "/fimongo/data",
+            "filesystem_uuid": "74e80e43-bc28-47e8-93f7-7aa89f7364dc",
+            "block_device": "/dev/mapper/mpathf1",
+            "hypervisor": "none",
+            "hypervisor_scsi": null,
+            "scsi_uuid": "60050768138202df880000000000011d",
+            "flashsystem": "fs9500-2.cpolab.ibm.com",
+            "volume_id": "268",
+            "volume_group": "ORION17-mdb9-testRep",
+            "replicated_clones": [
+              {
+                "name": "ORION17-mdb9-testRep-replicated",
+                "policy": "ReplicatedSnaps",
+                "target": "FS9500-3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "opsmanager_metadata": {
+    "nodes": [
+      {
+        "dbPath": "/fimongo/data",
+        "hidden": false,
+        "hostname": "mdb8",
+        "id": "mdb8:27017",
+        "lastAgentPing": "2026-09-25T04:08:24Z",
+        "memberState": "SECONDARY",
+        "mongodbVersion": "8.0.26",
+        "opTime": "2026-09-25T04:05:05Z",
+        "oplogStoreType": "thirdPartyOplogStore",
+        "port": 27017,
+        "priority": 0.0,
+        "rsId": "testRep",
+        "snapshotable": true,
+        "votes": 0
+      }
+    ],
+    "snapshotMetadata": {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1790309175
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-09-25T04:06:52Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 1238698557440,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790309175
+          },
+          "member": "REPLICA_SET",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "testRep",
+          "shardId": null,
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.27017.1790309185"
+        }
+      ],
+      "snapshotId": "6ab5f2f27c5bbb3be09b1416",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1790309175
+      }
+    },
+    "state": "FINISHED"
+  },
+  "host_metadata": {
+    "testRep": [
+      {
+        "hostname": "mdb8:27017",
+        "mount_point": "/fimongo",
+        "fs_uuid": "6c632403-82a8-4eeb-853d-f42a74ac10b3"
+      }
+    ]
+  },
+  "created_at": "2026-09-25T04:09:35.975633+00:00"
+}

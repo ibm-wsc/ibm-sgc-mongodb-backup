@@ -1,0 +1,44 @@
+2026-09-23 09:58:39,090 [INFO] Starting Ops Manager snapshot workflow
+2026-09-23 09:58:39,091 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-09-23 09:58:39,264 [DEBUG] STATUS 200
+2026-09-23 09:58:39,264 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a67ab0a0b3bb92668612c59",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a67ab0a0b3bb92668612c59",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-09-23 09:58:39,265 [INFO] Cluster resolved: sgcCluster
+2026-09-23 09:58:39,265 [INFO] Using explicitly provided snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-09-23 09:58:39,265 [INFO] Snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-09-23 09:58:39,265 [INFO] === INFRASTRUCTURE REVIEW (no backup will be taken) ===
+2026-09-23 09:59:25,324 [INFO] Reviewing replication coverage for cluster 'sgcCluster'
+2026-09-23 09:59:25,324 [WARNING] Shard configRS: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:59:25,325 [WARNING] Shard sgcShard_0: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:59:25,325 [WARNING] Shard sgcShard_1: no node is backed by a volume group with a replicated dependent
+2026-09-23 09:59:25,325 [WARNING] 3 shard(s) with no replicated dependency: configRS, sgcShard_0, sgcShard_1

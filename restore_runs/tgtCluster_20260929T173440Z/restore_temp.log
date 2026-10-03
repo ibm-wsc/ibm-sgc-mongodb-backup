@@ -1,0 +1,17 @@
+2026-09-29 12:34:40,539 [INFO] Starting Ops Manager restore workflow
+2026-09-29 12:34:40,541 [INFO] Restore point 6aba8d677c5bbb3be03c7d9c taken from cluster 'sgcCluster' at 2026-09-28T16:00:42.575037+00:00
+2026-09-29 12:34:40,541 [INFO] Building infrastructure map for target cluster 'tgtCluster'
+2026-09-29 12:35:34,350 [INFO] Shard mapping supplied by --shardmap:
+2026-09-29 12:35:34,350 [INFO]   configRS -> tgtconfigRS
+2026-09-29 12:35:34,350 [INFO]   sgcShard_0 -> tgtShard_0
+2026-09-29 12:35:34,350 [INFO]   sgcShard_1 -> tgtShard_1
+2026-09-29 12:35:34,350 [INFO] === VALIDATION (no restore will be performed) ===
+2026-09-29 12:35:34,353 [INFO] Authenticating to FlashSystem fs9500-2.cpolab.ibm.com
+2026-09-29 12:35:34,799 [INFO] configRS -> tgtconfigRS: 'configRS_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION15-mdb7-sgcCluster)
+2026-09-29 12:35:34,799 [INFO] Authenticating to FlashSystem fs9500-3.cpolab.ibm.com
+2026-09-29 12:35:35,338 [INFO] configRS -> tgtconfigRS: 'configRS_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION15-mdb7-sgcCluster-replicated)
+2026-09-29 12:35:35,536 [INFO] sgcShard_0 -> tgtShard_0: 'sgcShard_0_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION16-mdb8-sgcCluster)
+2026-09-29 12:35:35,727 [INFO] sgcShard_0 -> tgtShard_0: 'sgcShard_0_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION16-mdb8-sgcCluster-replicated)
+2026-09-29 12:35:35,923 [INFO] sgcShard_1 -> tgtShard_1: 'sgcShard_1_6aba8d677c5bbb3be03c7d9c' available on fs9500-2.cpolab.ibm.com (volume group ORION17-mdb9-sgcCluster)
+2026-09-29 12:35:36,122 [INFO] sgcShard_1 -> tgtShard_1: 'sgcShard_1_6aba8d677c5bbb3be03c7d9c' available on fs9500-3.cpolab.ibm.com (volume group ORION17-mdb9-sgcCluster-replicated)
+2026-09-29 12:35:36,122 [INFO] Every mapped snapshot is available on the target's storage

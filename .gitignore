@@ -1,0 +1,13 @@
+.DS_Store
+flash_credentials.py
+__pycache__/
+*.pyc
+*.cred
+
+# Site-specific infrastructure: hypervisors, guests, their addresses and the
+# FlashSystem host objects to map volumes to. Was covered by *.cred before it
+# was renamed. See infrastructure.map.sample for the shape.
+infrastructure.map
+
+# local scratch output
+scratch_*.log

@@ -1,0 +1,44 @@
+2026-10-02 15:31:17,298 [INFO] Starting Ops Manager snapshot workflow
+2026-10-02 15:31:17,299 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-10-02 15:31:17,488 [DEBUG] STATUS 200
+2026-10-02 15:31:17,488 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a67ab0a0b3bb92668612c59",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a67ab0a0b3bb92668612c59",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-10-02 15:31:17,489 [INFO] Cluster resolved: sgcCluster
+2026-10-02 15:31:17,489 [INFO] Using explicitly provided snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-10-02 15:31:17,489 [INFO] Snapshot nodes: ['mdb7:37017', 'mdb8:37017', 'mdb9:37017']
+2026-10-02 15:31:17,489 [INFO] === INFRASTRUCTURE REVIEW (no backup will be taken) ===
+2026-10-02 15:32:04,058 [INFO] Reviewing replication coverage for cluster 'sgcCluster'
+2026-10-02 15:32:04,059 [INFO] Shard configRS: mdb7:37017 on fs9500-2.cpolab.ibm.com / ORION15-mdb7-sgcCluster replicates ORION15-mdb7-sgcCluster-replicated -> FS9500-3
+2026-10-02 15:32:04,059 [INFO] Shard sgcShard_0: mdb8:37017 on fs9500-2.cpolab.ibm.com / ORION16-mdb8-sgcCluster replicates ORION16-mdb8-sgcCluster-replicated -> FS9500-3
+2026-10-02 15:32:04,059 [INFO] Shard sgcShard_1: mdb9:37017 on fs9500-2.cpolab.ibm.com / ORION17-mdb9-sgcCluster replicates ORION17-mdb9-sgcCluster-replicated -> FS9500-3
+2026-10-02 15:32:04,060 [INFO] Every shard is backed by a volume group with a replicated dependent

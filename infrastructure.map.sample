@@ -1,0 +1,43 @@
+### Site-specific infrastructure map. Copy to infrastructure.map and fill in.
+###
+### Loaded by hosts/opsman_infrastructure_map.py. It answers two questions the
+### REST APIs cannot: which hypervisor a MongoDB node runs on, and which
+### FlashSystem host object a volume must be mapped to for that node to see it.
+###
+### hostobject must match the host object name on the array exactly, including
+### case. Check it with tests/test_flashsystem_utilities.py --check find-host.
+
+hypervisors = {
+    "kvm1" : {  "hostobject" : "SITE-FCP-KVM1",      ### host object on the array
+                "ip"         : "10.0.0.11",
+                },
+    "kvm2" : {  "hostobject" : "SITE-FCP-KVM2",
+                "ip"         : "10.0.0.12",
+                },
+}
+
+guests = {
+    ### A bare-metal node maps volumes to its own host object.
+    "mdb1" : {  "hypervisor" : "none",
+                "hostobject" : "SITE-FCP-MDB1",
+                "ip"         : "10.0.0.21",
+                "storage"    : "flashsystem-a.example.com",
+                },
+
+    ### A virtualised node never gets a direct mapping: the volume is mapped to
+    ### its hypervisor's host object, which then presents it to the guest. The
+    ### hostobject here is unused in that case, but kept for reference.
+    "mdb2" : {  "hypervisor" : "kvm1",
+                "hostobject" : "mdb2",
+                "ip"         : "10.0.0.22",
+                "storage"    : "flashsystem-a.example.com",
+                },
+
+    ### 'storage' is the FlashSystem this node's volumes live on, and must be a
+    ### system listed in flash_credentials.py.
+    "mdb3" : {  "hypervisor" : "kvm2",
+                "hostobject" : "mdb3",
+                "ip"         : "10.0.0.23",
+                "storage"    : "flashsystem-b.example.com",
+                },
+}

@@ -1,0 +1,849 @@
+2026-10-02 14:48:15,501 [INFO] Starting Ops Manager restore workflow
+2026-10-02 14:48:15,501 [INFO] Restore point 6abf242c7c5bbb3be0d9025a taken from cluster 'sgcCluster' at 2026-10-02T03:30:08.828326+00:00
+2026-10-02 14:48:15,501 [INFO] Restore log: runs\sgcCluster_20261002T032435Z\restore_6abf242c7c5bbb3be0d9025a_20261002T194815Z.log
+2026-10-02 14:48:15,501 [INFO] Building infrastructure map for target cluster 'tgtCluster'
+2026-10-02 14:49:12,695 [INFO] Shard mapping supplied by --shardmap:
+2026-10-02 14:49:12,695 [INFO]   configRS -> tgtconfigRS
+2026-10-02 14:49:12,696 [INFO]   sgcShard_0 -> tgtShard_0
+2026-10-02 14:49:12,696 [INFO]   sgcShard_1 -> tgtShard_1
+2026-10-02 14:49:12,697 [INFO] Restore record: runs\sgcCluster_20261002T032435Z\restore_metadata.json
+2026-10-02 14:49:12,697 [INFO] call  find_cluster('http://129.40.36.100:8080', '6a386221ee19a6537cc68a97', <requests.auth.HTTPDigestAuth object at 0x0000019C69596E40>, 'tgtCluster')
+2026-10-02 14:49:12,697 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters
+2026-10-02 14:49:12,817 [DEBUG] STATUS 200
+2026-10-02 14:49:12,817 [DEBUG] {
+  "clusters": [
+    {
+      "clusterId": "6a387fc1f9f8584e2262c8f3",
+      "clusterName": "testRep",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a387fc1f9f8584e2262c8f3",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a3939acf9f8584e226a56e4",
+      "clusterName": "tsetrepRestore",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a3939acf9f8584e226a56e4",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a39559ff9f8584e226bec72",
+      "state": "ACTIVE"
+    },
+    {
+      "clusterId": "6a67ab0a0b3bb92668612c59",
+      "clusterName": "tgtCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "jobId": "6a67ab0a0b3bb92668612c59",
+      "state": "ACTIVE"
+    }
+  ]
+}
+2026-10-02 14:49:12,817 [INFO] ret   find_cluster -> '6a67ab0a0b3bb92668612c59'
+2026-10-02 14:49:12,818 [INFO] call  get_cluster_nodes('http://129.40.36.100:8080', '6a386221ee19a6537cc68a97', '6a67ab0a0b3bb92668612c59', <requests.auth.HTTPDigestAuth object at 0x0000019C69596E40>)
+2026-10-02 14:49:12,818 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59
+2026-10-02 14:49:13,001 [DEBUG] STATUS 200
+2026-10-02 14:49:13,001 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tgtShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb12",
+          "id": "rmdb12:37017",
+          "lastAgentPing": "2026-10-02T19:48:19Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb14",
+          "id": "rmdb14:37017",
+          "lastAgentPing": "2026-10-02T19:48:47Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 0.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 0
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "lastAgentPing": "2026-10-02T19:48:36Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "lastAgentPing": "2026-10-02T19:48:12Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "lastAgentPing": "2026-10-02T19:48:55Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "lastAgentPing": "2026-10-02T19:49:04Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb13",
+          "id": "rmdb13:37017",
+          "lastAgentPing": "2026-10-02T19:48:34Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "lastAgentPing": "2026-10-02T19:48:47Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "lastAgentPing": "2026-10-02T19:48:15Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb11",
+          "id": "rmdb11:37017",
+          "lastAgentPing": "2026-10-02T19:48:56Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtconfigRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "lastAgentPing": "2026-10-02T19:49:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:04Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "lastAgentPing": "2026-10-02T19:49:09Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:05Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "lastAgentPing": "2026-10-02T19:48:42Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:04Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "6abf3847457a6b80701899fb"
+}
+2026-10-02 14:49:13,001 [INFO] ret   get_cluster_nodes -> [{'id': 'rmdb12:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb14:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb9:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb4:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb2:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb8:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb13:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb1:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb3:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb11:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb7:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb-config1:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb-config2:37017', 'dbPath': '/fimongo1/data'}]
+2026-10-02 14:49:13,001 [INFO] call  get_cluster_topology('http://129.40.36.100:8080', '6a386221ee19a6537cc68a97', '6a67ab0a0b3bb92668612c59', <requests.auth.HTTPDigestAuth object at 0x0000019C69596E40>)
+2026-10-02 14:49:13,002 [DEBUG] API GET http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59
+2026-10-02 14:49:13,204 [DEBUG] STATUS 200
+2026-10-02 14:49:13,204 [DEBUG] {
+  "replicaSets": [
+    {
+      "id": "tgtShard_1",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb12",
+          "id": "rmdb12:37017",
+          "lastAgentPing": "2026-10-02T19:48:19Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb14",
+          "id": "rmdb14:37017",
+          "lastAgentPing": "2026-10-02T19:48:47Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 0.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 0
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "lastAgentPing": "2026-10-02T19:48:36Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "lastAgentPing": "2026-10-02T19:48:12Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "lastAgentPing": "2026-10-02T19:48:55Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:02Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_1",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtShard_0",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "lastAgentPing": "2026-10-02T19:49:04Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb13",
+          "id": "rmdb13:37017",
+          "lastAgentPing": "2026-10-02T19:48:34Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "lastAgentPing": "2026-10-02T19:48:47Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "lastAgentPing": "2026-10-02T19:48:15Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb11",
+          "id": "rmdb11:37017",
+          "lastAgentPing": "2026-10-02T19:48:56Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:00Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtShard_0",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    },
+    {
+      "id": "tgtconfigRS",
+      "nodes": [
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "lastAgentPing": "2026-10-02T19:49:11Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:04Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "lastAgentPing": "2026-10-02T19:49:09Z",
+          "memberState": "PRIMARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:05Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        },
+        {
+          "dbPath": "/fimongo1/data",
+          "hidden": false,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "lastAgentPing": "2026-10-02T19:48:42Z",
+          "memberState": "SECONDARY",
+          "mongodbVersion": "8.0.26",
+          "opTime": "2026-10-02T19:48:04Z",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "port": 37017,
+          "priority": 1.0,
+          "rsId": "tgtconfigRS",
+          "snapshotable": true,
+          "votes": 1
+        }
+      ],
+      "oplogType": "thirdParty"
+    }
+  ],
+  "restoreId": "6abf3847457a6b80701899fb"
+}
+2026-10-02 14:49:13,205 [INFO] ret   get_cluster_topology -> {'replicaSets': [{'id': 'tgtShard_1', 'nodes': [{'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb12', 'id': 'rmdb12:37017', 'lastAgentPing': '2026-10-02T19:48:19Z', 'memberState': 'PRIMARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:02Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_1', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb14', 'id': 'rmdb14:37017', 'lastAgentPing': '2026-10-02T19:48:47Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:02Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 0.0, 'rsId': 'tgtShard_1', 'snapshotable': True, 'votes': 0}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb9', 'id': 'rmdb9:37017', 'lastAgentPing': '2026-10-02T19:48:36Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:02Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_1', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb4', 'id': 'rmdb4:37017', 'lastAgentPing': '2026-10-02T19:48:12Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:02Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_1', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb2', 'id': 'rmdb2:37017', 'lastAgentPing': '2026-10-02T19:48:55Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:02Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_1', 'snapshotable': True, 'votes': 1}], 'oplogType': 'thirdParty'}, {'id': 'tgtShard_0', 'nodes': [{'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb8', 'id': 'rmdb8:37017', 'lastAgentPing': '2026-10-02T19:49:04Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:00Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_0', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb13', 'id': 'rmdb13:37017', 'lastAgentPing': '2026-10-02T19:48:34Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:00Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_0', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb1', 'id': 'rmdb1:37017', 'lastAgentPing': '2026-10-02T19:48:47Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:00Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_0', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb3', 'id': 'rmdb3:37017', 'lastAgentPing': '2026-10-02T19:48:15Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:00Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_0', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb11', 'id': 'rmdb11:37017', 'lastAgentPing': '2026-10-02T19:48:56Z', 'memberState': 'PRIMARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:00Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtShard_0', 'snapshotable': True, 'votes': 1}], 'oplogType': 'thirdParty'}, {'id': 'tgtconfigRS', 'nodes': [{'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb7', 'id': 'rmdb7:37017', 'lastAgentPing': '2026-10-02T19:49:11Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:04Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtconfigRS', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb-config1', 'id': 'rmdb-config1:37017', 'lastAgentPing': '2026-10-02T19:49:09Z', 'memberState': 'PRIMARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:05Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtconfigRS', 'snapshotable': True, 'votes': 1}, {'dbPath': '/fimongo1/data', 'hidden': False, 'hostname': 'rmdb-config2', 'id': 'rmdb-config2:37017', 'lastAgentPing': '2026-10-02T19:48:42Z', 'memberState': 'SECONDARY', 'mongodbVersion': '8.0.26', 'opTime': '2026-10-02T19:48:04Z', 'oplogStoreType': 'thirdPartyOplogStore', 'port': 37017, 'priority': 1.0, 'rsId': 'tgtconfigRS', 'snapshotable': True, 'votes': 1}], 'oplogType': 'thirdParty'}], 'restoreId': '6abf3847457a6b80701899fb'}
+2026-10-02 14:49:13,205 [INFO] Source replica sets : 3
+2026-10-02 14:49:13,205 [INFO] Destination replica sets : 3
+2026-10-02 14:49:13,205 [INFO] Cluster topology validation passed
+2026-10-02 14:49:13,206 [INFO] call  start_restore('http://129.40.36.100:8080', '6a386221ee19a6537cc68a97', '6a67ab0a0b3bb92668612c59', {'clusterId': '6a39559ff9f8584e226bec72', 'clusterName': 'sgcCluster', 'groupId': '6a386221ee19a6537cc68a97', 'restoreTimestamp': {'increment': 1, 'time': 1790911604}, 'rsSnapshotsMetadata': [{'defaultRWConcern': {'defaultReadConcern': {'level': 'local'}, 'defaultReadConcernSource': 'implicit', 'defaultWriteConcern': {'w': 'majority', 'wtimeout': 0}, 'defaultWriteConcernSource': 'implicit', 'localUpdateWallClockTime': '2026-10-02T03:27:07Z'}, 'encryption': False, 'fcv': '8.0', 'fileSize': 2254056738816, 'incremental': True, 'isConfigShard': False, 'keyEncryptionUUID': None, 'lastOplogApplied': {'increment': 1, 'time': 1790911604}, 'member': 'SHARD', 'mongodbVersion': '8.0.26', 'oplogStoreType': 'thirdPartyOplogStore', 'rsId': 'sgcShard_0', 'shardId': 'sgcShard_0', 'snapshotVersion': 1, 'srcBackupName': None, 'startupOptions': {}, 'storageEngine': 'wiredTiger', 'thisBackupName': 'mdb8.37017.1790911607'}, {'defaultRWConcern': {'defaultReadConcern': {'level': 'local'}, 'defaultReadConcernSource': 'implicit', 'defaultWriteConcern': {'w': 'majority', 'wtimeout': 0}, 'defaultWriteConcernSource': 'implicit', 'localUpdateWallClockTime': '2026-10-02T03:27:07Z'}, 'encryption': False, 'fcv': '8.0', 'fileSize': 198066176, 'incremental': True, 'isConfigShard': False, 'keyEncryptionUUID': None, 'lastOplogApplied': {'increment': 1, 'time': 1790911604}, 'member': 'CONFIG_SERVER', 'mongodbVersion': '8.0.26', 'oplogStoreType': 'thirdPartyOplogStore', 'rsId': 'configRS', 'shardId': '', 'snapshotVersion': 1, 'srcBackupName': None, 'startupOptions': {}, 'storageEngine': 'wiredTiger', 'thisBackupName': 'mdb7.37017.1790911559'}, {'defaultRWConcern': {'defaultReadConcern': {'level': 'local'}, 'defaultReadConcernSource': 'implicit', 'defaultWriteConcern': {'w': 'majority', 'wtimeout': 0}, 'defaultWriteConcernSource': 'implicit', 'localUpdateWallClockTime': '2026-10-02T03:27:07Z'}, 'encryption': False, 'fcv': '8.0', 'fileSize': 2254661816320, 'incremental': True, 'isConfigShard': False, 'keyEncryptionUUID': None, 'lastOplogApplied': {'increment': 1, 'time': 1790911604}, 'member': 'SHARD', 'mongodbVersion': '8.0.26', 'oplogStoreType': 'thirdPartyOplogStore', 'rsId': 'sgcShard_1', 'shardId': 'sgcShard_1', 'snapshotVersion': 1, 'srcBackupName': None, 'startupOptions': {}, 'storageEngine': 'wiredTiger', 'thisBackupName': 'mdb9.37017.1790911585'}], 'snapshotId': '6abf242c7c5bbb3be0d9025a', 'snapshotTimestamp': {'increment': 1, 'time': 1790911604}}, [{'id': 'rmdb12:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb14:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb9:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb4:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb2:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb8:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb13:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb1:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb3:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb11:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb7:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb-config1:37017', 'dbPath': '/fimongo1/data'}, {'id': 'rmdb-config2:37017', 'dbPath': '/fimongo1/data'}], <requests.auth.HTTPDigestAuth object at 0x0000019C69596E40>)
+2026-10-02 14:49:13,206 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/clusters/6a67ab0a0b3bb92668612c59/restore
+2026-10-02 14:49:13,206 [DEBUG] {
+  "snapshotsMetadata": [
+    {
+      "clusterId": "6a39559ff9f8584e226bec72",
+      "clusterName": "sgcCluster",
+      "groupId": "6a386221ee19a6537cc68a97",
+      "restoreTimestamp": {
+        "increment": 1,
+        "time": 1790911604
+      },
+      "rsSnapshotsMetadata": [
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-10-02T03:27:07Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 2254056738816,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790911604
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_0",
+          "shardId": "sgcShard_0",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb8.37017.1790911607"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-10-02T03:27:07Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 198066176,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790911604
+          },
+          "member": "CONFIG_SERVER",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "configRS",
+          "shardId": "",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb7.37017.1790911559"
+        },
+        {
+          "defaultRWConcern": {
+            "defaultReadConcern": {
+              "level": "local"
+            },
+            "defaultReadConcernSource": "implicit",
+            "defaultWriteConcern": {
+              "w": "majority",
+              "wtimeout": 0
+            },
+            "defaultWriteConcernSource": "implicit",
+            "localUpdateWallClockTime": "2026-10-02T03:27:07Z"
+          },
+          "encryption": false,
+          "fcv": "8.0",
+          "fileSize": 2254661816320,
+          "incremental": true,
+          "isConfigShard": false,
+          "keyEncryptionUUID": null,
+          "lastOplogApplied": {
+            "increment": 1,
+            "time": 1790911604
+          },
+          "member": "SHARD",
+          "mongodbVersion": "8.0.26",
+          "oplogStoreType": "thirdPartyOplogStore",
+          "rsId": "sgcShard_1",
+          "shardId": "sgcShard_1",
+          "snapshotVersion": 1,
+          "srcBackupName": null,
+          "startupOptions": {},
+          "storageEngine": "wiredTiger",
+          "thisBackupName": "mdb9.37017.1790911585"
+        }
+      ],
+      "snapshotId": "6abf242c7c5bbb3be0d9025a",
+      "snapshotTimestamp": {
+        "increment": 1,
+        "time": 1790911604
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rmdb12:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb14:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb9:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb4:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb2:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb8:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb13:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb3:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb11:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb7:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb-config1:37017",
+      "restoreRole": "RESTORE"
+    },
+    {
+      "id": "rmdb-config2:37017",
+      "restoreRole": "RESTORE"
+    }
+  ]
+}
+2026-10-02 14:49:13,351 [DEBUG] STATUS 200
+2026-10-02 14:49:13,352 [DEBUG] {
+  "clusterMapping": [
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb8",
+          "id": "rmdb8:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb13",
+          "id": "rmdb13:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb1",
+          "id": "rmdb1:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb3",
+          "id": "rmdb3:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb11",
+          "id": "rmdb11:37017",
+          "port": 37017,
+          "rsId": "tgtShard_0",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_0",
+      "targetRsId": "tgtShard_0"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb12",
+          "id": "rmdb12:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb14",
+          "id": "rmdb14:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb9",
+          "id": "rmdb9:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb4",
+          "id": "rmdb4:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb2",
+          "id": "rmdb2:37017",
+          "port": 37017,
+          "rsId": "tgtShard_1",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "sgcShard_1",
+      "targetRsId": "tgtShard_1"
+    },
+    {
+      "nodes": [
+        {
+          "error": null,
+          "hostname": "rmdb7",
+          "id": "rmdb7:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb-config1",
+          "id": "rmdb-config1:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        },
+        {
+          "error": null,
+          "hostname": "rmdb-config2",
+          "id": "rmdb-config2:37017",
+          "port": 37017,
+          "rsId": "tgtconfigRS",
+          "state": "INITIAL",
+          "stateUpdateTime": null
+        }
+      ],
+      "rsId": "configRS",
+      "targetRsId": "tgtconfigRS"
+    }
+  ],
+  "restoreId": "6ac00ab9457a6b8070195e8c"
+}
+2026-10-02 14:49:13,352 [INFO] ret   start_restore -> '6ac00ab9457a6b8070195e8c'
+2026-10-02 14:49:13,354 [INFO] Restore ID: 6ac00ab9457a6b8070195e8c
+2026-10-02 14:49:13,354 [INFO] call  start_restore_execution('http://129.40.36.100:8080', '6a386221ee19a6537cc68a97', '6ac00ab9457a6b8070195e8c', <requests.auth.HTTPDigestAuth object at 0x0000019C69596E40>)
+2026-10-02 14:49:13,354 [DEBUG] API POST http://129.40.36.100:8080/api/public/v1.0/backup/third_party/group/6a386221ee19a6537cc68a97/restore/6ac00ab9457a6b8070195e8c/start
+2026-10-02 14:49:13,741 [DEBUG] STATUS 200
+2026-10-02 14:49:13,741 [DEBUG] {
+  "errorCode": "NONE",
+  "version": "1",
+  "status": "OK"
+}
+2026-10-02 14:49:13,741 [INFO] ret   start_restore_execution -> None
+2026-10-02 14:49:13,742 [INFO] Restore 6ac00ab9457a6b8070195e8c created and started. Drive the nodes with --restore-id 6ac00ab9457a6b8070195e8c
